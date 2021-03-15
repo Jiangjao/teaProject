@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from .models import Heros,CodeImages,Resource
+from django.http import HttpResponseRedirect, Http404
 # from django.shortcuts import render_to_response
 from django.views.generic import DetailView
 
@@ -23,7 +24,7 @@ def chemDetail(request):
 	return HttpResponse(html)
 
 
-def detail(request, job_id):
+def detail(request, job_id,Job,Cities):
     try:
         job = Job.objects.get(pk=job_id)
         job.city_name = Cities[job.job_city][1]

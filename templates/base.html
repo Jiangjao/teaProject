@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+        <title>Document</title>
+    {%endblock%}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+    {% comment %} rel="stylesheet"> {% endcomment %}
+
+    <meta name="viewport" content="width=device-width;initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href="{% static 'css/main.css' %}">
+    <link rel='stylesheet'type="text/css" href="{% static 'css/responsive.css'%}">   
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    {% block css %}
+
+     
+    {% endblock %}
+
+<body>
+    <header class="navigation">
+        <a href="{% url 'index' %}" id='logo'>
+            <h1>teaProject(testing)</h1>
+            <h2>find ways</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}" class="selected">Index</a></li><!--
+             --><li><a href="{% url 'tables' %}">About</a></li>
+                <li><a href="{% url 'index' %}" >How to use</a></li>
+                <li><a href="{% url 'about' %}">Document</a></li>
+                <li><a href="{% url 'download' %}">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    {% block content %}
+    
+    {% endblock %}
+    <footer class="footer">
+            <a href="https://www.baidu.com" ><img src="{%static 'image/Block.jpg' %}" alt="test_picture"></a>
+            <img src="{%static 'image/Block.jpg' %}" alt="test_picture" class="social-icon">
+            <img src="{%static 'image/Block.jpg' %}" alt="test_picture" class="social-icon">
+            <p>&copy;2020 cup of teas 备案号:1008</p>
+    </footer>
+</body>
+
+</html>

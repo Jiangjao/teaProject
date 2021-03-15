@@ -1,0 +1,5 @@
+django-pure-pagination
+
+django == 2.2
+mysqlclient
+pillow

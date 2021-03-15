@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	<title>chemistry particles</title> 
+{% endblock %}
+
+    
+    
+
+{% block css %}
+<!-- DataTables CSS -->
+	{% comment %} <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"> {% endcomment %}
+
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"> 
+{% endblock %}
+
+
+{% block breadcrumb %}
+<!-- Content Header (Page header) -->
+    
+{% endblock %}
+
+
+
+{% block content %}
+	<form method="get" action="{% url 'search' %}">
+		{% comment %} {% csrf_token %} {% endcomment %}
+		<input type="search" name="q" placeholder="Search" required>
+		{% comment %} <input type="search" placeholder="搜索" required> {% endcomment %}
+		<button type="submit">搜索</button>
+	</form>
+
+		{% if error_message %} 
+			<p>
+				<strong>{{ error_message }} </strong>
+			</p>
+		{% endif %}
+        
+	
+		<div class="box-body" >	
+			<div class="butler_list company list">
+		    	<div class="layout">
+					<div class="head">
+						<ul class="tab_header">
+							<li class="active"><a href="?ct=&city=">全部</a> </li>
+							<li class=""><a href="?sort=test1&ct=&item1=">排序字段1 &#8595;</a></li>
+							<li class=""><a href="?sort=test2&ct=&item2=">排序字段2 &#8595;</a></li>
+						</ul>
+					</div>
+						{% for asset in page_heros.object_list %}
+						<dl class="des difdes">
+						<dd>
+								
+									<div class="clearfix">
+										<a href="org-detail-homepage.html">
+											<h1>{{ asset.code_images }}</h1>
+											<div class="pic fl">
+
+													<img src="../images/authentication.png"/>
+
+													<img src="../images/gold.png"/>
+
+											</div>
+										</a>
+									</div>
+									<ul class="cont">
+										<li class="first"><p class="pic9">seek<span>1</span></p><p class="c7">find:<span>1000</span></p></li>
+										{% comment %} <li class="c8" style="padding-left:18px;">北京市海淀区中关村北大街</li>
+										<li class="pic10" style="padding-left:18px;">经典课程：
+
+												<a href="/diary/19/">{{ asset.id }}</a>
+
+												<a href="/diary/16/">数据库基础</a>
+
+										</li> {% endcomment %}
+									</ul>
+								</dd>
+							<dt>
+								<a href="org-detail-homepage.html">
+									<img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}{{asset.entryname}}"/>
+								</a>
+									
+							</dt>
+							
+							
+							<div class="buy start_groupbuy jsShowPerfect2" data-id="22"><br/>详细<br/>信息</div>
+						</dl>
+						
+						{% endfor %}
+					{% comment %} <div id="pagination">
+						{{ page_heros.render }}
+					</div> {% endcomment %}
+
+					<div class="pageturn">
+						<ul class="pagelist">	
+							{% if page_heros.has_previous %}
+								<li class="long"><a href=""?{{ page_heros.previous_page_number.querystring }}"">上一页</a></li>
+							{% endif %}
+
+							{% for page in page_heros.pages %}
+								{% if page %}
+									{% ifequal page page_heros.number %}
+										<li class="active"><a href="?{{ page }}">{{ page }}</a></li>
+									{% else %}
+										<li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li> 
+									{% endifequal %}
+								{% else %}
+									<li class='none'> ... </li> 
+								{% endif %}
+							{% endfor %}
+							{% if page_heros.has_next %}
+								<li class="long"><a href="?{{ page_heros.next_page_number.querystring }}">下一页</a></li>
+							{% endif %}		
+							{% comment %} 					
+							<li><a href="?page=2" class="page">2</a></li>	
+							<li><a href="?page=3" class="page">3</a></li>
+							<li class="long"><a href="?page=2">下一页</a></li> {% endcomment %}
+						</ul>
+					</div>
+        		</div>
+			</div>
+		</div>
+
+	
+{% endblock content %}
+
+{% block script %}
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+<script><!--第三步：初始化Datatables-->
+    $(document).ready( function () {
+        $('#table_id_example').DataTable({
+			"autoWidth": true,
+			"info": true,
+
+		});
+		
+    } );
+    </script>
+{% comment %} <script src="{%static 'js/jquery.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'js/jquery-migrate-1.2.1.min.js'%}" type="text/javascript"></script> {% endcomment %}
+{% endblock  %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	<title>chemistry particles</title> 
+{% endblock %}
+
+    
+    
+
+{% block css %}
+<!-- DataTables CSS -->
+	{% comment %} <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"> {% endcomment %}
+
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"> 
+{% endblock %}
+
+{% block content %}
+    <div id='wrapper'>
+        <section>
+            <img src='image/IMG20160911145839.jpg' alt="" class="profile-photo">
+            <h3>About</h3>
+            <p>专注于茶叶的研究</p>
+            <p>茶叶代谢组的和其他组的区别</p>
+            <!-- <p>其他文献</p> -->
+        </section>
+        <footer>
+            <a href="https://www.baidu.com" ><img src="image/Block.jpg" alt="test_picture"></a>
+            {% comment %} <img src="image/Block.jpg" alt="test_picture" class="social-icon">
+            <img src="image/Block.jpg" alt="test_picture" class="social-icon"> {% endcomment %}
+            <p>&copy;2020虚幻大学</p>
+        </footer>
+    </div>
+{% endblock %}
+
+    
+    

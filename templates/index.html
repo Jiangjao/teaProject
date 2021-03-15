@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+    
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link  rel='stylesheet' href="{% static 'css/responsive.css'%}">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0">
+
+{% endblock%}
+    {% block css %}
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+        
+    <link  rel='stylesheet' type="text/css" href="{% static 'css/main.css' %}">
+        <!-- 自适应设备 -->
+    {% comment %} <meta name="viewport" content="width=device-width;initial-scale=1.0"> {% endcomment %}
+    {% endblock %}
+{%block content%}
+    <div id='wrapper'>
+        <section>
+                <ul id="gallery">
+                    <li>
+                        <a href="image/ball.jpg">
+                            <img src="{%static 'image/ball.jpg' %}" alt="">
+                            <p>test1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{%static 'image/ball.jpg' %}">
+                            <img src="{%static 'image/ball.jpg' %}" alt="">
+                            <p>test2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="image/ball.jpg">
+                            <img src="{%static 'image/ball.jpg' %}" alt="">
+                            <p>test3</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 占位符 -->
+            <!--  <p> </p>  %} -->
+        </section>
+    </div>
+{% endblock %}

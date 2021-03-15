@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+        <title>Download</title>
+{%endblock%}
+
+{% block content %}
+    <div class="box mb40">
+        <h4>资料下载</h4>
+        <ul class="downlist">
+            {% for resource in course_resources %}
+            <li>
+                <span ><i class="aui-iconfont aui-icon-file"></i>&nbsp;&nbsp;{{ resource.title }}</span>
+                <a href="{{ resource.name.url }}" class="downcode" target="_blank" download="" data-id="274" title="">下载</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

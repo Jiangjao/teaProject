@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<title>404</title>							
+	<link rel="stylesheet" type="text/css" href="{%static 'css/reset.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
+	<script type="text/javascript" src="{%static 'js/jquery.min.js' %}"></script>
+	
+</head>
+<body class="bg404 errorpage">
+	<section>
+		<div class="wp">
+			<div class="cont">
+				<img src="{%static 'image/pic404.png' %}"/>
+				<br/><br/><br/><br/>
+				<p>wow~这个页面被外星人抢走了~</p>
+				{% if error_msg %}
+    				<p>{{ error_msg }} 没有找到，兄弟</p>
+				{% endif %}
+				{% if q %}
+    				<p>{{ q }} 没有找到，兄弟</p>
+				{% endif %}
+				<br/>
+				<span>Wow~ this page was the alien took ~</span>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% if error_msg %}
+    <p>{{ error_msg }}</p>
+{% endif %}
+
+
+  <div>
+  {{  post_list.id }}
+  
+    {{ post_list.name }}
+    {{ post_list.hp_max }}
+    {{ post_list.hp_growth }}
+    {{ post_list.hp_start }}
+    {{ post_list.mp_max }}
+    {{ post_list.mp_growth }}
+    {{ post_list.mp_start }}
+    {{ post_list.attack_max }}
+    {{ post_list.attack_growth }}
+    {{ post_list.attack_start }}
+    {{ post_list.defense_max }}
+    {{ post_list.defense_growth }}
+    {{ post_list.defense_start }}
+    <p>在这里显示文章的相应信息</p>
+  </div>
+
+  {% comment %} <div class="no-post">
+    没有搜索到符合条件的文章
+  </div> {% endcomment %}

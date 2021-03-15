@@ -172,22 +172,7 @@
 <script src="{% static 'adminlet-2.4.10/bower_components/datatables.net/js/jquery.dataTables.min.js' %}"></script>
 <script src="{% static 'adminlet-2.4.10/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
 
-<script>
-$(function () {
-        $('#assets_table').DataTable({
-          "paging": true,       <!-- 允许分页 -->
-          "lengthChange": true, <!-- 允许改变每页显示的行数 -->
-          "searching": true,    <!-- 允许内容搜索 -->
-          "ordering": true,     <!-- 允许排序 -->
-          "info": true,         <!-- 显示信息 -->
-          "autoWidth": false    <!-- 固定宽度 -->
-        });
-      });
-  <!--第三步：初始化Datatables-->
-$(document).ready( function () {
-    $('#table_id_example').DataTable();
-} );
-</script>
+
 
 
 {% endblock %}

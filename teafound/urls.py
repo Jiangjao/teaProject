@@ -18,7 +18,10 @@ urlpatterns = [
     # re_path('(?P<year>[0-9]{4}).html', views.myyear, name='urlyear'),
 
     # 路由分发
-    path("tables/<int:chem_id>",views.chemDetail, name="chemDetail")
+    path("tables/<int:cid>/",views.chemDetail, name="chemDetail"),
+
+    # 详细页面
+    # path("chem_detail.html",views.chemDetail, name="chemDetail")
     # ### 自定义过滤器
     # path('<yyyy:year>', views.year), 
 ]

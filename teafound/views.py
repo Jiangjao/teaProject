@@ -2,7 +2,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
-from .models import Heros,CodeImages,Resource
+from .models import CodeImages,Resource,Chemistry
 from django.http import HttpResponseRedirect, Http404
 # from django.shortcuts import render_to_response
 from django.views.generic import DetailView
@@ -18,10 +18,15 @@ def about(request):
     
 	return render(request,'about.html')
 
-def chemDetail(request):
-	now = datetime.datetime.now()
-	html = "<html><body>It is now %s.</body></html>" % now
-	return HttpResponse(html)
+def chemDetail(request,cid):
+	try:
+		Chemicial = Chemistry.objects.get(pk=cid)
+		# Chemistry.city_name = 'e'
+		# logger.info('job retrieved from db :%s' % job_id)
+	except Chemicial.DoesNotExist:
+		raise Http404("Chemicial does not exist")
+	return render(request, 'chem_detail.html', {'Chemicial': Chemicial})
+
 
 
 def detail(request, job_id,Job,Cities):
@@ -82,7 +87,7 @@ def search(request):
 	q = request.GET.get('q')
 	error_msg = ''
 	try:
-		post_list = Heros.objects.get(name__icontains=q)
+		post_list = CodeImages.objects.get(name__icontains=q)
 	except Exception as error:
 		print(error)
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})

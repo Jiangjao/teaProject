@@ -21,7 +21,7 @@ from django.conf.urls import url
 
 from django.views.static import serve
 
-from .settings import MEDIA_ROOT
+from settings.base import MEDIA_ROOT
 
 urlpatterns = [
     path('',include('teafound.urls')),
@@ -29,5 +29,7 @@ urlpatterns = [
 
     # media配置,必须以media开头
     url(r'media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
+    path('grappelli',include('grappelli.urls')),
+    url(r'^search/', include('haystack.urls')),
     # url(r'^static/(?P<path>.*)$', serve, {"document_root":STATIC_ROOT}),
 ]

@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 {% load static %}
-<head>
-	<meta charset="UTF-8">
-	<title>404</title>							
-	<link rel="stylesheet" type="text/css" href="{%static 'css/reset.css' %}">
-	<link rel="stylesheet" type="text/css" href="{%static 'css/animate.css' %}">
-	<link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
-	<script type="text/javascript" src="{%static 'js/jquery.min.js' %}"></script>
-	
-</head>
-<body class="bg404 errorpage">
-	<section>
+
+{% block title %}
+	<title>chemicial Not found</title> 
+{% endblock %}
+
+
+{% block content %}
+	<section class="bg404 errorpage">
 		<div class="wp">
 			<div class="cont">
 				<img src="{%static 'image/pic404.png' %}"/>
@@ -28,5 +24,7 @@
 			</div>
 		</div>
 	</section>
-</body>
-</html>
+{% endblock %}
+
+	
+

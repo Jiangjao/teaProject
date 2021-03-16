@@ -21,8 +21,7 @@ def about(request):
 def chemDetail(request,cid):
 	try:
 		Chemicial = Chemistry.objects.get(pk=cid)
-		# Chemistry.city_name = 'e'
-		# logger.info('job retrieved from db :%s' % job_id)
+		print(Chemicial.molecularweight)
 	except Chemicial.DoesNotExist:
 		raise Http404("Chemicial does not exist")
 	return render(request, 'chem_detail.html', {'Chemicial': Chemicial})
@@ -39,7 +38,7 @@ def detail(request, job_id,Job,Cities):
     return render(request, 'job.html', {'job': job})
 
 # class ResumeDetailView(DetailView):
-#     """      绠€鍘嗚鎯呴〉     """
+#     """      缁犫偓閸樺棜顕涢幆鍛淬€�     """
 #     model = Resume
 #     template_name ='resume_detail.html'
 #     # success_url = '/joblist/'
@@ -50,7 +49,7 @@ def show_all_heros(request):
 	# for index in all_heros:
 	# 	print(index.name,index.hp_max,index.hp_growth)
 
-	# 鐎电ll_heroes鏉╂稖顢戦崚鍡涖€�
+	# 閻庣數顒爈l_heroes閺夆晜绋栭、鎴﹀礆閸℃稏鈧拷
 	try:
 		page = request.GET.get('page', 10)
 	except PageNotAnInteger:
@@ -83,7 +82,6 @@ def show_some_images(request):
 	return render(request,'showimages.html',{'all_images': all_images})
 
 def search(request):
-
 	q = request.GET.get('q')
 	error_msg = ''
 	try:
@@ -93,7 +91,7 @@ def search(request):
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})
 	print(post_list)
 	if not q:
-		error_msg = '鐠囩柉绶崗銉ュ彠闁款喛鐦�'
+		error_msg = '閻犲洨鏌夌欢顓㈠礂閵夈儱褰犻梺娆惧枦閻︼拷'
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})
 
 
@@ -106,28 +104,28 @@ def download(request):
 	# error_msg = ''
 
 	# if not q:
-	# 	error_msg = '鐠囩柉绶崗銉ュ彠闁款喛鐦�'
+	# 	error_msg = '閻犲洨鏌夌欢顓㈠礂閵夈儱褰犻梺娆惧枦閻︼拷'
 	# 	return render(request, '404.html', {'error_msg': error_msg})
 
 	course_resources = Resource.objects.all()
 	print(dir(course_resources))
 	return render(request, 'download.html', {'course_resources': course_resources})
-# locals閸欐﹢鍣洪惃鍕浘閻€劌鏅�!!
+# locals闁告瑦锕㈤崳娲儍閸曨偒娴橀柣鈧妼閺咃拷!!
 # def books(request):
-#     ###  娴犲窇odels閸欐牗鏆熼幑顔荤炊缂佹獩emplate  ###
+#     ###  濞寸姴绐噊dels闁告瑦鐗楅弳鐔煎箲椤旇崵鐐婄紓浣圭崺emplate  ###
 #     n = Name.objects.all()
 #     return render(request, 'bookslist.html', locals())
 
-# fitter 閸戣姤鏆熼惃鍕暏閿燂拷?
- # 閹懏鍔呴崐鎯ф倻
+# fitter 闁告垼濮ら弳鐔兼儍閸曨厽鏆忛柨鐕傛嫹?
+ # 闁诡垰鎳忛崝鍛村磹閹勫€�
 # sent_avg =f" {T1.objects.aggregate(Avg('sentiment'))['sentiment__avg']:0.2f} "
-# gte lte lt gt濞夈劍鍓版稉瀣灊缁惧灝鎮楅棃銏㈡畱閹垮秳缍�
-# # 濮濓絽鎮滈弫浼村櫤
+# gte lte lt gt婵炲鍔嶉崜鐗堢▔鐎ｎ亜鐏婄紒鎯х仢閹妫冮姀銏＄暠闁瑰灝绉崇紞锟�
+# # 婵繐绲介幃婊堝极娴兼潙娅�
 # queryset = T1.objects.values('sentiment')
 # condtions = {'sentiment__gte': 0.5}
 # plus = queryset.filter(**condtions).count()
 
-# # 鐠愮喎鎮滈弫浼村櫤
+# # 閻犳劗鍠庨幃婊堝极娴兼潙娅�
 # queryset = T1.objects.values('sentiment')
 # condtions = {'sentiment__lt': 0.5}
 # minus = queryset.filter(**condtions).count()

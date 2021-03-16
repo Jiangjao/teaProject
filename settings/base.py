@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['42.193.172.132','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     # ##内置的后台管理系统?
     'django.contrib.admin',
     # ##内置的用户认证系统?
@@ -49,8 +50,10 @@ INSTALLED_APPS = [
     'teafound',
 
     # 分页机制
-    
     'pure_pagination',
+
+    # 搜索引擎
+    'haystack',
 ]
 
 # ##中间件是request和response对象之间的钩子Hook
@@ -176,3 +179,15 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+# 搜索引擎
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    },
+}
+
+# 自动更新索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+

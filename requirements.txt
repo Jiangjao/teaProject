@@ -3,3 +3,7 @@ django-pure-pagination
 django >= 2.2
 mysqlclient
 pillow
+django-grappelli
+django-haystack
+whoosh
+jieba

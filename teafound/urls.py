@@ -13,7 +13,9 @@ urlpatterns = [
     path('showimages/', views.show_some_images, name='images'),
     path('download/', views.download, name='download'),
     path('about/', views.about, name='about'),
-    url(r'^search/$', views.search, name='search'),
+    # 这里为啥无法删除？？
+    # url(r'^search/', include('haystack.urls')),
+    # path('search/', include('haystack.urls')),
     # ### 正则匹配
     # re_path('(?P<year>[0-9]{4}).html', views.myyear, name='urlyear'),
 

@@ -23,6 +23,7 @@ from django.views.static import serve
 
 from settings.base import MEDIA_ROOT
 
+
 urlpatterns = [
     path('',include('teafound.urls')),
     path('admin/', admin.site.urls),

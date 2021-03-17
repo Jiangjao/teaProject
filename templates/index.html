@@ -26,6 +26,13 @@
     {% comment %} <meta name="viewport" content="width=device-width;initial-scale=1.0"> {% endcomment %}
     {% endblock %}
 {%block content%}
+    <form method="get" action="{% url 'haystack_search' %}">
+		
+		<input type="search" name="q" placeholder="Search" required>
+
+		<button type="submit">搜索</button>
+		
+	</form> 
     <div id='wrapper'>
         <section>
                 <ul id="gallery">

@@ -9,13 +9,7 @@
 
 
 {% block content %}
-	<form method="get" action="{% url 'search' %}">
-		
-		<input type="search" name="q" placeholder="Search" required>
-		{% comment %} <input type="search" placeholder="搜索" required> {% endcomment %}
-		<button type="submit">搜索</button>
-		{% csrf_token %}
-	</form>
+	
 
 		{% if error_message %} 
 			<p>

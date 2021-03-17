@@ -46,14 +46,16 @@ INSTALLED_APPS = [
     # ##锦泰资源路径
     'django.contrib.staticfiles',
 
+    # 搜索引擎
+    'haystack',
+    
     # my applications
     'teafound',
 
     # 分页机制
     'pure_pagination',
 
-    # 搜索引擎
-    'haystack',
+    
 ]
 
 # ##中间件是request和response对象之间的钩子Hook

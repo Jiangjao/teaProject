@@ -7,3 +7,4 @@ django-grappelli
 django-haystack
 whoosh
 jieba
+django-bootstrap4

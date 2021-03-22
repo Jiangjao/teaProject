@@ -6,6 +6,18 @@
         <title>Download</title>
 {%endblock%}
 
+{% block header %}    
+<nav>
+    <ul id="com_headtop">
+        <li tabindex="1"><a href="{% url 'index' %}" >Home</a></li><!--
+     --><li tabindex="1"><a href="{% url 'tables' %}"  >About</a></li>
+        <li tabindex="1"><a href="{% url 'index' %}" >How to use</a></li>
+        <li tabindex="1"><a href="{% url 'about' %}">Document</a></li>
+        <li tabindex="1"><a href="{% url 'download' %}" class="selected">Download</a></li>
+    </ul>
+</nav>
+{% endblock %}   
+
 {% block content %}
     <div class="box mb40">
         <h4>资料下载</h4>

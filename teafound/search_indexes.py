@@ -5,7 +5,7 @@ from .models import CodeImages
 
 class CodeImagesIndex(indexes.SearchIndex, indexes.Indexable):
     text  = indexes.CharField(document=True, use_template=True)
-    compoundformula = indexes.CharField(model_attr='compoundformula',null=True)
+    compoundformula = indexes.CharField(model_attr='compoundformula')
     cid = indexes.CharField(model_attr='cid',null=True)
 
     def get_model(self):

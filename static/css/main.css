@@ -138,7 +138,7 @@ nav{
 
 /* 导航背景 */
 nav{
-    background: #8ae29d;
+    background:#92f5c434;
     /* border-color: #2c4231; */
 }
 
@@ -171,11 +171,24 @@ nav li a{
 }
 nav a.selected{
     color:#226934f5;
-}
-nav a:hover{
-    color:#39d35f75;
+    cursor:pointer;
 }
 
+nav  li >a:focus{
+    background-color: #FF9148;
+    outline-style: none;
+    /* font-weight: bold; */
+} 
+
+/* nav a:hover{
+    color:#39d35f75;
+  
+} */
+/*这里需要更改试试*/
+/* nav  li:focus{
+    background-color: #FF9148;
+    outline-style: none;
+} */
 
 /**************************************
 TABLES display
@@ -369,3 +382,91 @@ body{
     background-image:url("../image/companyinfo.svg") ;
 }
 
+/* *********
+form
+****************
+****************/
+
+.message{
+    width:70%;
+    height:20%;
+    margin:0 auto;
+}
+#message {
+    position: absolute;
+    left : 25%;
+    top  : 15%;
+  }
+
+  
+form {
+    position: relative;
+    width  : 70%;
+    height : 60%;
+    margin : 12% auto;
+  
+  }
+
+
+input[type=search] {
+    border: 1px dotted #999;
+    border-radius: 0;
+  
+    -webkit-appearance: none;
+  }
+
+input, textarea, select{
+    width : 60%;
+    height:10%;
+    margin: 0;
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+  }
+button{
+    width : 10%;
+    height:10%;
+    margin: 0;
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+  }
+
+input:focus, textarea:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    outline      : none;
+  }
+
+/******************
+***** table *******
+*******************/
+table{
+    border:1px solid rgb(191, 231, 216);
+    width:75%;
+    /* text-align: center; */
+    margin:0 auto;
+}
+/* table th{
+    border: 1px solid white;
+    padding: 5px;
+    color:rgba(0, 132, 255, 0.288);
+   }
+table td{
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    color: white;
+} */
+
+/******************
+***** result *******
+*******************/
+/* .content >table >tbody>:nth-child(1) {
+    text-align: center;
+    color:red;
+    margin: 0 auto ;
+    padding: 0 auto;
+} */

@@ -5,7 +5,18 @@
 	<title>chemistry particles</title> 
 {% endblock %}
 
-    
+{% block header %}    
+<nav>
+    <ul id="com_headtop">
+        <li tabindex="1"><a href="{% url 'index' %}" >Home</a></li><!--
+     --><li tabindex="1"><a href="{% url 'tables' %}" >About</a></li>
+        <li tabindex="1"><a href="{% url 'index' %}" >How to use</a></li>
+        <li tabindex="1"><a href="{% url 'about' %}"class="selected" >Document</a></li>
+        <li tabindex="1"><a href="{% url 'download' %}">Download</a></li>
+    </ul>
+</nav>
+
+{% endblock %}    
     
 
 {% block css %}

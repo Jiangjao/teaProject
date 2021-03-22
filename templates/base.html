@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+{% comment %} {% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %} {% endcomment %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,31 +25,35 @@
     {% endblock %}
 
 <body>
+    
     <header class="navigation">
         <a href="{% url 'index' %}" id='logo'>
             <h1>teaProject(testing)</h1>
             <h2>find ways</h2>
         </a>
+    {% block header %}    
         <nav>
-            <ul>
-                <li><a href="{% url 'index' %}" class="selected">Index</a></li><!--
-             --><li><a href="{% url 'tables' %}">About</a></li>
-                <li><a href="{% url 'index' %}" >How to use</a></li>
-                <li><a href="{% url 'about' %}">Document</a></li>
-                <li><a href="{% url 'download' %}">Download</a></li>
+            <ul id="com_headtop">
+                <li tabindex="1"><a href="{% url 'index' %}" class="selected">Home</a></li><!--
+             --><li tabindex="1"><a href="{% url 'tables' %}">About</a></li>
+                <li tabindex="1"><a href="{% url 'index' %}" >How to use</a></li>
+                <li tabindex="1"><a href="{% url 'about' %}">Document</a></li>
+                <li tabindex="1"><a href="{% url 'download' %}">Download</a></li>
             </ul>
         </nav>
-    </header>
-   
-    {% block content %}
     
     {% endblock %}
+    </header>
+    {% block content %}
+        
+    {% endblock %}
     <footer class="footer">
-            <a href="https://www.baidu.com" ><img src="{%static 'image/Block.jpg' %}" alt="test_picture"></a>
+            <!-- <a href="https://www.baidu.com" ><img src="{%static 'image/Block.jpg' %}" alt="test_picture"></a>
             <img src="{%static 'image/Block.jpg' %}" alt="test_picture" class="social-icon">
             <img src="{%static 'image/Block.jpg' %}" alt="test_picture" class="social-icon">
-            <p>&copy;2020 cup of teas 备案号:1008</p>
+            <p>&copy;2020 cup of teas 备案号:1008</p> -->
     </footer>
+<script type="text/javascript" src="{% static 'js/focus.js' %}" ></script>
 </body>
 
 </html>

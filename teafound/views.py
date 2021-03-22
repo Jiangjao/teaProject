@@ -42,7 +42,7 @@ def detail(request, job_id,Job,Cities):
 	return render(request, 'job.html', {'job': job})
 
 # class ResumeDetailView(DetailView):
-#     """      缂備胶濮崑鎾绘煕濡儤顥℃い鏇熺洴楠炲棝宕ㄥǎ顑藉亾閿燂拷     """
+#     """      缂傚倷鑳舵慨顓㈠磻閹剧粯鐓曟俊顖滃劋椤モ剝銇勯弴鐔烘创妤犵偛妫濆畷銊デ庨钘変壕闁跨噦鎷�     """
 #     model = Resume
 #     template_name ='resume_detail.html'
 #     # success_url = '/joblist/'
@@ -53,7 +53,7 @@ def show_all_heros(request):
 	# for index in all_heros:
 	# 	print(index.name,index.hp_max,index.hp_growth)
 
-	# 闂佽娴烽弫鎼侇敆閻栧潤_heroes闂佸搫顦弲婊呯矙閺嶎厹鈧線骞嬮敃鈧粈鍡涙煕閳╁啰鈼ら柍褜鍓ㄩ幏锟�
+	# 闂備浇顕уù鐑藉极閹间緡鏁嗛柣鏍ф饯_heroes闂備礁鎼ˇ顐﹀疾濠婂懐鐭欓柡宥庡幑閳ь兛绶氶獮瀣晝閳ь剛绮堥崱娑欑厱闁斥晛鍟伴埣銈夋煃瑜滈崜銊╁箯閿燂拷
 	try:
 		page = request.GET.get('page', 10)
 	except PageNotAnInteger:
@@ -111,7 +111,7 @@ def search(request):
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})
 	print(post_list)
 	if not q:
-		error_msg = '闂佽崵濮村ú銊╁蓟婢跺本顐芥い鎾卞灩缁€鍌炴煏婢跺牆鍔氱憸鎵█濮婂搫鈻庨幆褎鐏曢梺浼欒閹凤拷'
+		error_msg = '闂備浇宕垫慨鏉懨洪妸鈺佽摕濠㈣泛鏈鑺ャ亜閹惧崬鐏╃紒鈧崒鐐寸厪濠㈣泛鐗嗛崝姘辨喐閹殿喖鈻堟慨濠傛惈閳诲酣骞嗚閻忔洟姊烘导娆掝吅闁瑰嚖鎷�'
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})
 
 	return render(request, 'results.html', {'error_msg': error_msg,
@@ -123,28 +123,28 @@ def download(request):
 	# error_msg = ''
 
 	# if not q:
-	# 	error_msg = '闂佽崵濮村ú銊╁蓟婢跺本顐芥い鎾卞灩缁€鍌炴煏婢跺牆鍔氱憸鎵█濮婂搫鈻庨幆褎鐏曢梺浼欒閹凤拷'
+	# 	error_msg = '闂備浇宕垫慨鏉懨洪妸鈺佽摕濠㈣泛鏈鑺ャ亜閹惧崬鐏╃紒鈧崒鐐寸厪濠㈣泛鐗嗛崝姘辨喐閹殿喖鈻堟慨濠傛惈閳诲酣骞嗚閻忔洟姊烘导娆掝吅闁瑰嚖鎷�'
 	# 	return render(request, '404.html', {'error_msg': error_msg})
 
 	course_resources = Resource.objects.all()
 	print(dir(course_resources))
 	return render(request, 'download.html', {'course_resources': course_resources})
-# locals闂備礁鎲￠悷锕傛晝閵忋倕闂繛宸簼閸庡秹鏌涢弴銊ヤ航婵炲瓨锕㈤弻锝夊焵椤掆偓婵″ジ鏌￠崪鍐╁!!
+# locals闂傚倷绀侀幉锟犳偡閿曞倹鏅濋柕蹇嬪€曢梻顖涚箾瀹割喕绨奸柛搴＄Ч閺屾盯寮撮妸銉よ埅濠电偛鐡ㄩ敃銏ゅ蓟閿濆鐒垫い鎺嗗亾濠碘€炽偢閺岋繝宕崘鈺侇伓!!
 # def books(request):
-#     ###  濠电偛顕慨瀵哥玻閸ｅシels闂備礁鎲￠悷锕傛偋濡ゅ懎姹查柣鏃傚帶缁犲弶銇勯弮鍥у惞闁绘劕锕︾槐鎾存媴閸︻厼鏄mplate  ###
+#     ###  婵犵數鍋涢顓熸叏鐎靛摜鐜婚柛锝呫偡els闂傚倷绀侀幉锟犳偡閿曞倹鍋嬫俊銈呮噹濮规煡鏌ｉ弮鍌氬付缂佺姴寮堕妵鍕籍閸パ冩優闂佺粯鍔曢敃锔炬閹惧瓨濯撮柛锔诲幖閺勵櫕mplate  ###
 #     n = Name.objects.all()
 #     return render(request, 'bookslist.html', locals())
 
-# fitter 闂備礁鎲￠崹鍏兼叏閵堝姹查柣鏂垮悑閸庡秹鏌涢弴銊ュ箺闁哄棗绻橀弻銊╂偆閸屾稑顏�?
- # 闂備浇顕栭崹浼村箠韫囨稑绀夐柛娑欐綑绾惧綊鏌熼鍡楀閳ь剨鎷�
+# fitter 闂傚倷绀侀幉锟犲垂閸忓吋鍙忛柕鍫濐槸濮规煡鏌ｉ弬鍨倯闁稿骸绉归弻娑㈠即閵娿儱绠洪梺鍝勬缁绘﹢寮婚妸鈺傚亞闁稿本绋戦锟�?
+ # 闂傚倷娴囬鏍垂娴兼潙绠犻煫鍥ㄧ☉缁€澶愭煕濞戞瑦缍戠痪鎯х秺閺岀喖顢涢崱妤€顏╅柍褜鍓ㄩ幏锟�
 # sent_avg =f" {T1.objects.aggregate(Avg('sentiment'))['sentiment__avg']:0.2f} "
-# gte lte lt gt婵犵數鍋涢ˇ顓㈠礉瀹ュ绀堥柣妤€鐗忛埢鏃堟倵閿濆簼绨婚柣蹇擄功缁辨帡骞嗚娴犮垽鏌熼绛嬫疁婵☆偄鍟存慨鈧柕蹇ョ磿閺嗙娀姊洪悷鎵虎缂佸纾槐鐐烘晸閿燂拷
-# # 婵犳鍠楃换鎰緤娴犲绠栨繝濠傜墕閺嬩礁霉閸忓吋缍戞繛鍜冩嫹
+# gte lte lt gt濠电姷鏁搁崑娑⑺囬銏犵鐎广儱顦粈鍫ユ煟濡も偓閻楀繘鍩㈤弮鍫熷€甸柨婵嗙凹缁ㄥ鏌ｈ箛鎿勫姛缂佽鲸甯￠獮鍡氼槾濞寸姰鍨介弻鐔碱敊缁涘鐤佸┑鈽嗗亜閸熷瓨鎱ㄩ埀顒勬煏韫囥儳纾块柡鍡欏█濮婃椽鎮烽幍顔昏檸缂備礁顦壕顓犳閻愮儤鏅搁柨鐕傛嫹
+# # 濠电姵顔栭崰妤冩崲閹邦喖绶ゅù鐘差儏缁犳牗绻濇繝鍌滃闁哄绀侀湁闁稿繐鍚嬬紞鎴炵箾閸滃啯瀚�
 # queryset = T1.objects.values('sentiment')
 # condtions = {'sentiment__gte': 0.5}
 # plus = queryset.filter(**condtions).count()
 
-# # 闂佽崵濮甸崝妤呭窗鎼淬劌绠栨繝濠傜墕閺嬩礁霉閸忓吋缍戞繛鍜冩嫹
+# # 闂備浇宕垫慨鐢稿礉濡ゅ懎绐楅幖娣妼缁犳牗绻濇繝鍌滃闁哄绀侀湁闁稿繐鍚嬬紞鎴炵箾閸滃啯瀚�
 # queryset = T1.objects.values('sentiment')
 # condtions = {'sentiment__lt': 0.5}
 # minus = queryset.filter(**condtions).count()

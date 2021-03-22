@@ -54,6 +54,8 @@ INSTALLED_APPS = [
 
     # 分页机制
     'pure_pagination',
+    # 样式美化
+    
 
     
 ]

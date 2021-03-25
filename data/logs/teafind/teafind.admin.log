@@ -1,0 +1,3 @@
+2021-03-25 20:45:54,306 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-25 20:46:06,391 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-25 20:46:06,391 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched

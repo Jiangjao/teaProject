@@ -12,6 +12,10 @@ from datetime import date
 from haystack.generic_views import SearchView
 
 import datetime
+import logging
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 def index(request):
@@ -42,7 +46,7 @@ def detail(request, job_id,Job,Cities):
 	return render(request, 'job.html', {'job': job})
 
 # class ResumeDetailView(DetailView):
-#     """      缂傚倷鑳舵慨顓㈠磻閹剧粯鐓曟俊顖滃劋椤モ剝銇勯弴鐔烘创妤犵偛妫濆畷銊デ庨钘変壕闁跨噦鎷�     """
+#     """      缂傚倸鍊烽懗鑸垫叏椤撱垹纾婚柟鍓х帛閻撴洘淇婇婊冨妺妞ゃ儮鍓濋妵鍕即閻旂儤鍒涘Δ鐘靛仜濡繂鐣烽妸銉囧酣顢栭挊澶夊闂佽法鍣﹂幏锟�     """
 #     model = Resume
 #     template_name ='resume_detail.html'
 #     # success_url = '/joblist/'
@@ -53,7 +57,7 @@ def show_all_heros(request):
 	# for index in all_heros:
 	# 	print(index.name,index.hp_max,index.hp_growth)
 
-	# 闂備浇顕уù鐑藉极閹间緡鏁嗛柣鏍ф饯_heroes闂備礁鎼ˇ顐﹀疾濠婂懐鐭欓柡宥庡幑閳ь兛绶氶獮瀣晝閳ь剛绮堥崱娑欑厱闁斥晛鍟伴埣銈夋煃瑜滈崜銊╁箯閿燂拷
+	# 闂傚倷娴囬褍霉閻戣棄鏋侀柟闂寸贰閺佸棝鏌ｉ弽褎楗痏heroes闂傚倷绀侀幖顐λ囬锕€鐤炬繝濠傛噽閻瑩鏌″搴″箲闁逞屽厸缁舵岸鐛€ｎ喗鏅濋柍褜鍓涚划鍫ュ幢濞戞瑧鍘遍梺鏂ユ櫅閸熶即鍩ｉ妶澶嬬厓鐟滄粓宕滈妸鈺佺闁跨噦鎷�
 	try:
 		page = request.GET.get('page', 10)
 	except PageNotAnInteger:
@@ -93,11 +97,13 @@ class MySearchView(SearchView):
 	def get_queryset(self):
 		queryset = super(MySearchView, self).get_queryset()
 		# further filter queryset based on some set of criteria
+		# logger.info("%s has been found",queryset)
 		return queryset
 		# return queryset.filter(pub_date__gte=date(2015, 1, 1))
 
 	def get_context_data(self, *args, **kwargs):
 		context = super(MySearchView, self).get_context_data(*args, **kwargs)
+		logger.info("%s has been found",context)
 		# do something
 		return context
 
@@ -111,7 +117,7 @@ def search(request):
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})
 	print(post_list)
 	if not q:
-		error_msg = '闂備浇宕垫慨鏉懨洪妸鈺佽摕濠㈣泛鏈鑺ャ亜閹惧崬鐏╃紒鈧崒鐐寸厪濠㈣泛鐗嗛崝姘辨喐閹殿喖鈻堟慨濠傛惈閳诲酣骞嗚閻忔洟姊烘导娆掝吅闁瑰嚖鎷�'
+		error_msg = '闂傚倷娴囧畷鍨叏閺夋嚚娲Ω閳轰浇鎽曟繝銏ｆ硾閺堫剟顢曢懞銉ｄ簻闁规儳宕悘鈺冪磼閳ь剟宕掗悙瀵稿帾婵犮垼娉涢悧鍡涘礉濮樿鲸鍠愰柟娈垮枛閳诲牊鎱ㄦ繝鍌涙儓闁宠閰ｉ獮鍡氼槼闁诲繑娲熷鐑樺濞嗘帩鍚呴梺鐟板殩閹凤拷'
 		return render(request, '404.html', {'error_msg': error_msg,'q':q})
 
 	return render(request, 'results.html', {'error_msg': error_msg,
@@ -123,28 +129,28 @@ def download(request):
 	# error_msg = ''
 
 	# if not q:
-	# 	error_msg = '闂備浇宕垫慨鏉懨洪妸鈺佽摕濠㈣泛鏈鑺ャ亜閹惧崬鐏╃紒鈧崒鐐寸厪濠㈣泛鐗嗛崝姘辨喐閹殿喖鈻堟慨濠傛惈閳诲酣骞嗚閻忔洟姊烘导娆掝吅闁瑰嚖鎷�'
+	# 	error_msg = '闂傚倷娴囧畷鍨叏閺夋嚚娲Ω閳轰浇鎽曟繝銏ｆ硾閺堫剟顢曢懞銉ｄ簻闁规儳宕悘鈺冪磼閳ь剟宕掗悙瀵稿帾婵犮垼娉涢悧鍡涘礉濮樿鲸鍠愰柟娈垮枛閳诲牊鎱ㄦ繝鍌涙儓闁宠閰ｉ獮鍡氼槼闁诲繑娲熷鐑樺濞嗘帩鍚呴梺鐟板殩閹凤拷'
 	# 	return render(request, '404.html', {'error_msg': error_msg})
 
 	course_resources = Resource.objects.all()
 	print(dir(course_resources))
 	return render(request, 'download.html', {'course_resources': course_resources})
-# locals闂傚倷绀侀幉锟犳偡閿曞倹鏅濋柕蹇嬪€曢梻顖涚箾瀹割喕绨奸柛搴＄Ч閺屾盯寮撮妸銉よ埅濠电偛鐡ㄩ敃銏ゅ蓟閿濆鐒垫い鎺嗗亾濠碘€炽偢閺岋繝宕崘鈺侇伓!!
+# locals闂傚倸鍊风粈渚€骞夐敓鐘冲仭闁挎洖鍊归弲婵嬫煏韫囧鈧洟姊婚娑氱鐎瑰壊鍠曠花濂告煕鎼达紕效闁哄本鐩鎾Ω閵夈倛鍩呮繝鐢靛仜閻°劑鏁冮姀銈呰摕闁挎繂顦悞鍨亜閹哄棗浜炬繝纰樷偓鐐藉仮闁哄矉绻濆畷顏堝礃閳轰緡浼�!!
 # def books(request):
-#     ###  婵犵數鍋涢顓熸叏鐎靛摜鐜婚柛锝呫偡els闂傚倷绀侀幉锟犳偡閿曞倹鍋嬫俊銈呮噹濮规煡鏌ｉ弮鍌氬付缂佺姴寮堕妵鍕籍閸パ冩優闂佺粯鍔曢敃锔炬閹惧瓨濯撮柛锔诲幖閺勵櫕mplate  ###
+#     ###  濠电姷鏁搁崑娑㈩敋椤撶喐鍙忛悗闈涙憸閻滃鏌涢敐鍛仭els闂傚倸鍊风粈渚€骞夐敓鐘冲仭闁挎洖鍊归崑瀣繆閵堝懏鍣规慨瑙勭叀閺岋綁寮崒姘粯缂備胶濮村鍫曞Φ閸曨垰绫嶉柛銉戝啯鍎梻浣虹帛閸旀洟鏁冮敂鐐潟闁规儳鐡ㄦ刊鎾煕閿旇骞栭柡鍕垫珪mplate  ###
 #     n = Name.objects.all()
 #     return render(request, 'bookslist.html', locals())
 
-# fitter 闂傚倷绀侀幉锟犲垂閸忓吋鍙忛柕鍫濐槸濮规煡鏌ｉ弬鍨倯闁稿骸绉归弻娑㈠即閵娿儱绠洪梺鍝勬缁绘﹢寮婚妸鈺傚亞闁稿本绋戦锟�?
- # 闂傚倷娴囬鏍垂娴兼潙绠犻煫鍥ㄧ☉缁€澶愭煕濞戞瑦缍戠痪鎯х秺閺岀喖顢涢崱妤€顏╅柍褜鍓ㄩ幏锟�
+# fitter 闂傚倸鍊风粈渚€骞夐敓鐘插瀭闁稿繐鍚嬮崣蹇涙煏閸繍妲告慨瑙勭叀閺岋綁寮崹顔藉€梺绋块缁夊綊寮诲☉銏犲嵆闁靛ǹ鍎辩粻娲⒑閸濆嫭顥滅紒缁橈耿瀵濡搁埡鍌氫簽闂佺ǹ鏈粙鎴︻敂閿燂拷?
+ # 闂傚倸鍊峰ù鍥敋閺嶎厼鍨傚ù鍏兼綑缁犵娀鐓崶銊р槈缂佲偓婢舵劖鐓曟繛鎴炵懄缂嶆垹鐥幆褏绉洪柡宀€鍠栭、娑㈠幢濡も偓椤忊晠鏌嶈閸撱劑骞忛敓锟�
 # sent_avg =f" {T1.objects.aggregate(Avg('sentiment'))['sentiment__avg']:0.2f} "
-# gte lte lt gt濠电姷鏁搁崑娑⑺囬銏犵鐎广儱顦粈鍫ユ煟濡も偓閻楀繘鍩㈤弮鍫熷€甸柨婵嗙凹缁ㄥ鏌ｈ箛鎿勫姛缂佽鲸甯￠獮鍡氼槾濞寸姰鍨介弻鐔碱敊缁涘鐤佸┑鈽嗗亜閸熷瓨鎱ㄩ埀顒勬煏韫囥儳纾块柡鍡欏█濮婃椽鎮烽幍顔昏檸缂備礁顦壕顓犳閻愮儤鏅搁柨鐕傛嫹
-# # 濠电姵顔栭崰妤冩崲閹邦喖绶ゅù鐘差儏缁犳牗绻濇繝鍌滃闁哄绀侀湁闁稿繐鍚嬬紞鎴炵箾閸滃啯瀚�
+# gte lte lt gt婵犵數濮烽弫鎼佸磻濞戔懞鍥敇閵忕姷顦悗骞垮劚椤︻垳绮堥崼銉︾厽婵°倐鍋撻柣妤€绻橀崺銏ゅ籍閸喎鈧敻鏌ㄥ┑鍡欏嚬缂併劌顭烽弻锝堢疀閹垮嫬濮涚紓浣介哺鐢繝鐛崱姘兼Ь婵炲濮伴崹浠嬪蓟閻旂⒈鏁婄紒娑橆儐閻や礁鈹戦埥鍡椾簻闁哥喎鐡ㄩ幈銊╁焵椤掑嫭鐓忛煫鍥ュ劤绾惧潡鏌￠崱娆忊枅婵﹥妞介幃鐑藉箥椤旀槒妾哥紓鍌欑椤︻垳澹曢鐘愁潟闁绘劗鍎ら弲鎼佹煥閻曞倹瀚�
+# # 婵犵數濮甸鏍窗濡ゅ啯宕查柟閭﹀枛缁躲倕霉閻樺樊鍎忕紒鐘崇墬缁绘繃绻濋崒婊冾暫闂佸搫顑勭粈渚€婀侀梺绋跨箰閸氬绱為幋鐐电闁告粌鍟€氾拷
 # queryset = T1.objects.values('sentiment')
 # condtions = {'sentiment__gte': 0.5}
 # plus = queryset.filter(**condtions).count()
 
-# # 闂備浇宕垫慨鐢稿礉濡ゅ懎绐楅幖娣妼缁犳牗绻濇繝鍌滃闁哄绀侀湁闁稿繐鍚嬬紞鎴炵箾閸滃啯瀚�
+# # 闂傚倷娴囧畷鍨叏閻㈢ǹ绀夋俊銈呮噹缁愭骞栧ǎ顒€濡肩紒鐘崇墬缁绘繃绻濋崒婊冾暫闂佸搫顑勭粈渚€婀侀梺绋跨箰閸氬绱為幋鐐电闁告粌鍟€氾拷
 # queryset = T1.objects.values('sentiment')
 # condtions = {'sentiment__lt': 0.5}
 # minus = queryset.filter(**condtions).count()

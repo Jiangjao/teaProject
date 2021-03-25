@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+import platform
+from pathlib import Path
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,17 +23,26 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '&si09(un@dj@9oc9w0z497w_e6ry710!)dk-x4(5p(inqcv&^b'
-
+LOG_DIR = "./data/logs/teafind/"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['42.193.172.132','127.0.0.1']
 
 
+if platform.system() == "Linux" or platform.system() == "Windows":
+    # linux or windows
+    print(Path(LOG_DIR).mkdir(parents=True, exist_ok=True))
+    print('==')
+elif platform.system() == "Darwin" or platform.system() == "Mac":
+    # OS X, 
+    # you could not create a folder at /data/logs dure to OS default policy
+    LOG_DIR = BASE_DIR
+
 # Application definition
 
 INSTALLED_APPS = [
-    'grappelli',
+    # 'grappelli',
     # ##内置的后台管理系统?
     'django.contrib.admin',
     # ##内置的用户认证系统?
@@ -62,6 +72,7 @@ INSTALLED_APPS = [
 
 # ##中间件是request和response对象之间的钩子Hook
 MIDDLEWARE = [
+    'teafound.performance.performance_logger_middleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -160,6 +171,63 @@ USE_L10N = True
 
 USE_TZ = True
 
+# logging
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': { # exact format is not important, this is the minimum information
+            'format': '%(asctime)s %(name)-12s %(lineno)d %(levelname)-8s %(message)s',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+
+        'mail_admins': { # Add Handler for mail_admins for `warning` and above
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'formatter': 'simple',
+            'filename': os.path.join(LOG_DIR, 'teafind.admin.log'),
+        },
+        'performance': {
+            #'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'formatter': 'simple',
+            'filename': os.path.join(LOG_DIR, 'teafound.performance.log'),
+        },
+    },
+    # default logger
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',
+    },
+
+    'loggers': {
+        "teafound": {
+            "handlers": ["console", "file"],
+            "level": "DEBUG",
+        },
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        # 暂时配置到这里
+        "teafound.performance": {
+            "handlers": ["console", "performance"],
+            "level": "INFO",
+            "propagate": False,
+        },
+    },
+}
 
 # 分页相关设置
 PAGINATION_SETTINGS = {

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
     <h2 style='text-align:center;'>Search</h2>
@@ -24,25 +25,102 @@
 
         {% if query %}
             <h3>Results</h3>
-            <ul>
-
-                <li><a href="#miao">编号系统</a></li>
-                
-                <li><a href="#wang">物性数据</a></li>
-                
-                <li><a href="#meng">药代动力学数据</a></li>
-
-                <li><a href="#meng">识别信息</a></li>
-                
-                <li><a href="#meng">识别信息</a></li>
-            </ul>
-            {% for result in page.object_list %}
+            <div class="box-body" >	
+                <div class="butler_list company list">
+                    <div class="layout">
+                        <div class="head">
+                            <ul class="tab_header">
+                                <li class="active"><a href="?ct=&city=">全部</a> </li>
+                                <li class=""><a href="?sort=test1&ct=&item1=">排序字段1 &#8595;</a></li>
+                                <li class=""><a href="?sort=test2&ct=&item2=">排序字段2 &#8595;</a></li>
+                            </ul>
+                        </div>
+                            {% comment %} {% for result in page.object_list %} {% endcomment %}
+                            {% for result in page.object_list %}
+                            <dl class="des difdes">
+                            <dd>
+                                    
+                                        <div class="clearfix">
+                                            <a href="/tables/{{ result.object.cid }}">
+                                                <h1>{{ result.object.entryname }}</h1>
+                                                <div class="pic fl">
+{% comment %}     
+                                                        <img src="{% static 'image/authentication.png' %}"/>
+    
+                                                        <img src="{% static 'image/wiki.jpeg' %}"/> {% endcomment %}
+    
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="cont">
+                                            <li class="first"><p class="pic9">seek<span>1</span></p><p class="c7">find:<span>1000</span></p></li>
+                                            {% comment %} <li class="c8" style="padding-left:18px;">北京市海淀区中关村北大街</li>
+                                            <li class="pic10" style="padding-left:18px;">经典课程：
+    
+                                                    <a href="/diary/19/">{{ result.id }}</a>
+    
+                                                    <a href="/diary/16/">数据库基础</a>
+    
+                                            </li> {% endcomment %}
+                                        </ul>
+                                    </dd>
+                                <dt>
+                                    <a href="org-detail-homepage.html">
+                                        <img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/>
+                                    </a>
+                                        
+                                </dt>
+                                
+                                
+                                <div class="buy start_groupbuy jsShowPerfect2" data-id="22"><br/>详细<br/>信息</div>
+                            </dl>
+                        
+                        {% empty %}
+                            <p>No results found.</p>
+                        {% endfor %}
+                        
+                        {% comment %} {% endfor %} {% endcomment %}
+                        {% comment %} <div id="pagination">
+                            {{ page_heros.render }}
+                        </div> {% endcomment %}
+    
+                        <div class="pageturn">
+                            <ul class="pagelist">
+                                	
+                                {% if page_heros.has_previous %}
+                                    <li class="long"><a href=""?{{ page_heros.previous_page_number.querystring }}"">上一页</a></li>
+                                {% endif %}
+    
+                                {% for page in page_heros.pages %}
+                                    {% if page %}
+                                        {% ifequal page page_heros.number %}
+                                            <li class="active"><a href="?{{ page }}">{{ page }}</a></li>
+                                        {% else %}
+                                            <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li> 
+                                        {% endifequal %}
+                                    {% else %}
+                                        <li class='none'> ... </li> 
+                                    {% endif %}
+                                {% endfor %}
+                                {% if page_heros.has_next %}
+                                    <li class="long"><a href="?{{ page_heros.next_page_number.querystring }}">下一页</a></li>
+                                {% endif %}		
+                                {% comment %} 					
+                                <li><a href="?page=2" class="page">2</a></li>	
+                                <li><a href="?page=3" class="page">3</a></li>
+                                <li class="long"><a href="?page=2">下一页</a></li> {% endcomment %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% comment %} {% for result in page.object_list %}
             <div class='content'>
                 
                 <table>
                     <tbody>
                     <tr>
-                        {% comment %} <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th> {% endcomment %}
+                        <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th>
                         <th  id="miao" colspan=2 ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/></th>    
                     </tr>
                     
@@ -72,7 +150,7 @@
                         </tr>
                         <tr>
                             <a name="#wang">1</a>
-                            {% comment %} <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th> {% endcomment %}
+                            <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th> 
                             <th id="wang" colspan=2 ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/></th>    
                             <!-- <a name="#wang">1</a> -->
                         </tr>
@@ -103,21 +181,19 @@
                             </tr>
                     </tbody>
                 </table>
-            </div>
-                
-            {% empty %}
-                <p>No results found.</p>
-            {% endfor %}
+            </div> {% endcomment %}
+            
 
-            {% if page.has_previous or page.has_next %}
-                <div >
-                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
-                    |
-                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
-                </div>
-            {% endif %}
+                {% if page.has_previous or page.has_next %}
+                    <div >
+                        {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                        |
+                        {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+                    </div>
+                {% endif %}
         {% else %}
-            {# Show some example queries to run, maybe query syntax, something else? #}
-        {% endif %}
+                {# Show some example queries to run, maybe query syntax, something else? #}
+        {% endif %}            
+                
     </form>
 {% endblock %}

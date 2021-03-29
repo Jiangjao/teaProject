@@ -2,25 +2,58 @@
     <p>{{ error_msg }}</p>
 {% endif %}
 
+<h3>Results</h3>
+  <ul>
 
-  <div>
-  {{  post_list.id }}
-  
-    {{ post_list.name }}
-    {{ post_list.hp_max }}
-    {{ post_list.hp_growth }}
-    {{ post_list.hp_start }}
-    {{ post_list.mp_max }}
-    {{ post_list.mp_growth }}
-    {{ post_list.mp_start }}
-    {{ post_list.attack_max }}
-    {{ post_list.attack_growth }}
-    {{ post_list.attack_start }}
-    {{ post_list.defense_max }}
-    {{ post_list.defense_growth }}
-    {{ post_list.defense_start }}
-    <p>在这里显示文章的相应信息</p>
-  </div>
+      <li><a href="#miao">编号系统</a></li>
+      
+      <li><a href="#wang">物性数据</a></li>
+      
+      <li><a href="#meng">药代动力学数据</a></li>
+
+      <li><a href="#meng">识别信息</a></li>
+      
+      <li><a href="#meng">识别信息</a></li>
+  </ul>
+
+{% for result in page.object_list %}
+<div class='content'>
+    <table>
+        <tbody>
+        <tr>
+          
+            {% comment %} <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th> {% endcomment %}
+            <th colspan=2 ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/></th>    
+        </tr>
+        
+            <tr>
+                <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th>
+                
+            </tr>
+            <tr>
+                <th scope="row" style="padding:0.2em 0; line-height:1.2em;">name</th>
+                <td><a href="{{ result.object.get_absolute_url }}">{{ result.object.entryname }}</a></td>
+            </tr>
+            <tr>
+                <th scope="row" style="padding:0.2em 0; line-height:1.2em;">mole</th>
+                <td><a href="{{ result.object.get_absolute_url }}">{{ result.object.cid }}</a>mole</td>
+            </tr>
+            <tr>
+                <th scope="row" style="padding:0.2em 0; line-height:1.2em;">InChIKey</th>
+                <td><a href="{{ result.object.get_absolute_url }}">XLYOFNOQVPJJNP-UHFFFAOYSA-N</a></td>
+            </tr>
+            <tr>
+                <th scope="row" style="padding:0.2em 0; line-height:1.2em;">IUPAC Name</th>
+                <td><a href="{{ result.object.get_absolute_url }}">oxidane</a></td>
+            </tr>
+            <tr>
+                <th scope="row" style="padding:0.2em 0; line-height:1.2em;">Create Date:</th>
+                <td><a href="{{ result.object.get_absolute_url }}">2010 02 15</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
 
   {% comment %} <div class="no-post">
     没有搜索到符合条件的文章

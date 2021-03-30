@@ -24,11 +24,11 @@ th, td { /* table elements 表格元素 */
 }
 /* 设置默认字体 */
 body,button, input, select, textarea {
-    font: 16px/1 -apple-system, BlinkMacSystemFont,Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    font: 1em/1 -apple-system, BlinkMacSystemFont,Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
 }
-h1 { font-size: 22px; /* 18px / 12px = 1.5 */ }
-h2 { font-size: 20px; }
-h3 { font-size: 18px; }
+h1 { font-size: 1.375em; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.2em; }
 h4, h5, h6 { font-size: 100%; }
 
 a {
@@ -219,7 +219,7 @@ footer .footer .nav {
     width: 500px;
     height: 30px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 footer .footer .nav li {
@@ -271,7 +271,7 @@ footer .footer .cont .third img {
 }
 
 footer .footer .tell {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -372,7 +372,7 @@ body{
     margin:0 0 10px;
 }
 
-.contact-info li.phone a{
+/* .contact-info li.phone a{
     background-image:url("../image/icon-phone.svg") ;
 }
 
@@ -382,7 +382,7 @@ body{
 
 .contact-info li.address a{
     background-image:url("../image/companyinfo.svg") ;
-}
+} */
 
 /* *********
 form
@@ -393,21 +393,27 @@ form
     width:70%;
     height:20%;
     margin:0 auto;
+    float:left;
 }
 #message {
     position: absolute;
     left : 25%;
     top  : 15%;
-  }
-
+    margin-bottom: 1rem;
+}
+#messagTop{
+    position: absolute;
+    left : 25%;
+    top  : -1em;
+    
+}
   
 form {
     position: relative;
     width  : 70%;
     height : 60%;
     margin : 12% auto;
-  
-  }
+}
 
 
 input[type=search] {
@@ -447,7 +453,7 @@ input:focus, textarea:focus {
 *******************/
 table{
     border:1px solid rgb(191, 231, 216);
-    width:75%;
+    width:60%;
     /* text-align: center; */
     margin:0 auto;
 }
@@ -466,9 +472,26 @@ table td{
 /******************
 ***** result *******
 *******************/
-/* .content >table >tbody>:nth-child(1) {
-    text-align: center;
-    color:red;
-    margin: 0 auto ;
+
+.content {
+    /* text-align: center; */
+    margin-top: 5%  ;
     padding: 0 auto;
-} */
+}
+#items{
+    width:10%;
+    height:auto;
+    /* float:right; */
+    /* text-align:center; */
+    position:fixed;
+    right:10px;
+    border-top: 1px solid #beb2b2;
+}
+#items >ul >li:first-child{
+    margin-top:0.7em;
+}
+#items >ul >li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom:2em;
+}

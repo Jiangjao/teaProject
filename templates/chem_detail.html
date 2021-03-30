@@ -3,28 +3,79 @@
 
 {% block content %}
 <h3>Chemicials</h3>
-  <ul>
+     <div class='message'>
+        <form method="get" action="{% url 'haystack_search' %}" id ="messagTop" >
+		
+		<input type="search" name="q" placeholder="Search" required>
 
-      <li><a href="#miao">编号系统</a></li>
-      
-      <li><a href="#wang">物性数据</a></li>
-      
-      <li><a href="#meng">药代动力学数据</a></li>
+		<button type="submit">搜索</button>
+		
+	    </form> 
+    </div>
+    
+    <div id="items">
+        <ul>
 
-      <li><a href="#meng">识别信息</a></li>
-      
-      <li><a href="#meng">识别信息</a></li>
-  </ul>
+        <li><a href="#miao">编号系统</a></li>
+        
+        <li><a href="#wang">物性数据</a></li>
+        
+        <li><a href="#meng">药代动力学数据</a></li>
 
-    <h1>化合物详细信息如下：</h1>
+        <li><a href="#meng">识别信息</a></li>
+        
+    </ul>
+    </div>
+
+   
+    {% comment %} <h1>化合物详细信息如下：</h1> {% endcomment %}
 
     <div class='content'>
         <table>
             <tbody>
+                <!-- serial number begin -->
+                <tr>
+            
+                    
+                    <th colspan="1" ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{Chemicial.object.entryname}}"/></th> 
+                    <th colspan="1" style="background:#fff">
+                        <p><span>分子式:</span>{{ Chemicial.molecularformula}}</p>
+                        <p><span>分子量:</span>{{ Chemicial.molecularweight }}</p>
+                        <p><span>tips:</span>{{ Chemicial.extra_word }}</p>
+                        
+                    </th>   
+                </tr>
+                
+                    <tr>
+                        <th colspan="2" style="text-align:center;background:#ddd">serial number data</th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">CAS number</th>
+                        <td><a href="">{{ Chemicial.cas }}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">EINECS number</th>
+                        <td><a href="{{ Chemicial.object.get_absolute_url }}"></a>{{ Chemicial.einecs }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">PubChem</th>
+                        <td><a href="{{ Chemicial.object.get_absolute_url }}">{{ Chemicial.pubchem }}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">IUPAC Name</th>
+                        <td><a href="{{ Chemicial.object.get_absolute_url }}">oxidane</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">Create Date:</th>
+                        <td><a href="{{ Chemicial.object.get_absolute_url }}">2010 02 15</a></td>
+                    </tr> 
+            <!-- serial number end -->
             <tr>
             
                 {% comment %} <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th> {% endcomment %}
-                <th colspan=2 ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{Chemicial.object.entryname}}"/></th>    
+                <!-- <th colspan=2 ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{Chemicial.object.entryname}}"/></th>     -->
             </tr>
             
                 <tr>

@@ -477,6 +477,8 @@ table td{
     /* text-align: center; */
     margin-top: 5%  ;
     padding: 0 auto;
+    width:auto;
+    height:auto;
 }
 #items{
     width:10%;
@@ -495,3 +497,39 @@ table td{
     list-style: none;
     margin-bottom:2em;
 }
+
+#contentTop{
+    width:50%;
+    /* 盒子无法正常显示？？ */
+    height:20em;
+    margin:0 auto;
+    border:1px solid red;
+    /* background-color: black; */
+}
+#contentheadleft{
+    float:left;
+    /* width:100%;
+    height:100%; */
+}
+#contentheadleft > a >img{
+    width:300px;
+    height:200px;
+}
+#contentheadright{
+    /* text-align: center; */
+    /* border:1px solid blue; */
+    float:right;
+    background:#fff;
+}
+
+#contentheadright>table>tbody>tr{
+    /* text-align: center; */
+    /* border:1px solid blue; */
+    float:right;
+    background:#fff;
+    padding-bottom: 5em;
+}
+
+/******************
+***** result end *******
+*******************/

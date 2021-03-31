@@ -16,6 +16,7 @@ class Chemistry(models.Model):
     cas = models.CharField(db_column='CAS', max_length=255, blank=True, null=True)  # Field name made lowercase.
     pubchem = models.CharField(db_column='PubChem', max_length=255, blank=True, null=True)  # Field name made lowercase.
     einecs = models.CharField(db_column='EINECS', max_length=255, blank=True, null=True)  # Field name made lowercase.
+    entryname = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
         db_table = 'chemistry'

@@ -16,13 +16,13 @@
     <div id="items">
         <ul>
 
-        <li><a href="#miao">编号系统</a></li>
-        
-        <li><a href="#wang">物性数据</a></li>
-        
-        <li><a href="#meng">药代动力学数据</a></li>
+            <li><a href="#miao">编号系统</a></li>
+            
+            <li><a href="#wang">物性数据</a></li>
+            
+            <li><a href="#meng">药代动力学数据</a></li>
 
-        <li><a href="#meng">识别信息</a></li>
+            <!-- <li><a href="#meng">识别信息</a></li> -->
         
     </ul>
     </div>
@@ -31,20 +31,50 @@
     {% comment %} <h1>化合物详细信息如下：</h1> {% endcomment %}
 
     <div class='content'>
+        <div id="contentTop">
+            <div id="contentheadleft" >
+                <a href="..{{ MEDIA_URL }}{{ Chemicial.entryname }}">
+                    <img src="..{{ MEDIA_URL }}{{Chemicial.entryname}}" alt=""/>
+                </a>
+            </div>
+            <table>
+                <tbody>
+                    <!-- display number begin -->
+                    
+            <tr>
+                <th  scope="row" style="text-align:center;background:#ddd">分子式</th>
+                <td><a href="">{{ Chemicial.molecularformula }}</a></td>
+            </tr>
+            <tr>
+                <th  scope="row">分子量:</th>
+                <td><a href="">{{ Chemicial.molecularweight }}</a></td>
+            </tr>
+            <tr>
+                <th  scope="row">tips:</th>
+                <td><a href="{{ Chemicial.object.get_absolute_url }}"></a>{{ Chemicial.extra_word }}</td>
+            </tr>
+                </tbody>
+            </table>  
+            
+                
+                <!-- <p>
+                    <span>分子式:</span>
+                    {{ Chemicial.molecularformula}}
+                </p>
+                <p>
+                    <span>分子量:</span>
+                    {{ Chemicial.molecularweight }}
+                </p>
+                <p>
+                    <span>tips:</span>
+                    {{ Chemicial.extra_word }}
+                </p> -->
+              
+        </div>
         <table>
             <tbody>
                 <!-- serial number begin -->
-                <tr>
-            
-                    
-                    <th colspan="1" ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{Chemicial.object.entryname}}"/></th> 
-                    <th colspan="1" style="background:#fff">
-                        <p><span>分子式:</span>{{ Chemicial.molecularformula}}</p>
-                        <p><span>分子量:</span>{{ Chemicial.molecularweight }}</p>
-                        <p><span>tips:</span>{{ Chemicial.extra_word }}</p>
-                        
-                    </th>   
-                </tr>
+                
                 
                     <tr>
                         <th colspan="2" style="text-align:center;background:#ddd">serial number data</th>

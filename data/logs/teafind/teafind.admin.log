@@ -185,3 +185,97 @@
 2021-03-30 15:18:01,399 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
 2021-03-30 15:19:24,204 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
 2021-03-30 15:19:24,204 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:46:24,817 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-30 18:46:57,754 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-30 18:47:16,501 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:47:16,501 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:48:22,814 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:48:22,814 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:48:52,355 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:48:52,355 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:51:08,604 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-30 18:51:29,954 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:51:29,954 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:53:17,349 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:53:17,349 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:54:28,589 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:54:28,589 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:57:19,685 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:57:19,685 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:58:55,445 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 18:58:55,445 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:00:37,965 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:00:37,965 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:00:56,976 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-30 19:01:15,758 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:01:15,758 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:01:39,108 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:01:39,108 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:07:13,253 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-30 19:07:29,495 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:07:29,495 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:09:44,549 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:09:44,549 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:11:29,158 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:11:29,158 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:11:46,037 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:11:46,037 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:14:53,839 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-30 19:14:53,839 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:00:51,022 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:01:04,564 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:01:04,564 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:02:25,766 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:02:25,766 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:06:45,178 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:08:21,363 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:08:21,363 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:13:01,927 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\views.py changed, reloading.
+2021-03-31 14:13:07,871 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:16:04,202 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:18:58,160 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:19:09,591 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:19:09,591 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:20:36,204 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:20:53,722 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:20:53,722 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:23:22,282 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\models.py changed, reloading.
+2021-03-31 14:23:28,251 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:23:31,836 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\models.py changed, reloading.
+2021-03-31 14:23:36,747 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:23:39,658 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\models.py changed, reloading.
+2021-03-31 14:23:45,558 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:23:47,211 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\models.py changed, reloading.
+2021-03-31 14:23:51,898 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:24:01,575 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\models.py changed, reloading.
+2021-03-31 14:24:06,761 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:52:03,646 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:52:03,646 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:53:33,291 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:53:46,542 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:53:46,542 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:53:46,556 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:53:46,556 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:53:46,604 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:53:46,604 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:55:21,430 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 14:56:11,269 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:56:11,269 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:56:11,373 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 14:56:11,373 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 15:50:37,080 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 15:50:49,383 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 15:50:49,383 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 15:57:17,306 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 15:57:17,306 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 15:59:19,139 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 15:59:31,963 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 15:59:31,963 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 16:02:35,062 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 16:02:35,062 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 16:09:16,669 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 16:09:31,541 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 16:09:31,541 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 16:13:36,504 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-03-31 16:13:42,020 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
+2021-03-31 16:13:42,020 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched

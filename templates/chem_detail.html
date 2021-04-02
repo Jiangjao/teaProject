@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block content %}
-<h3>Chemicials</h3>
-     <div class='message'>
+
+    <div class='message'>
         <form method="get" action="{% url 'haystack_search' %}" id ="messagTop" >
 		
 		<input type="search" name="q" placeholder="Search" required>
@@ -11,7 +11,7 @@
 		<button type="submit">搜索</button>
 		
 	    </form> 
-    </div>
+    </div>  
     
     <div id="items">
         <ul>
@@ -24,60 +24,47 @@
 
             <!-- <li><a href="#meng">识别信息</a></li> -->
         
-    </ul>
+        </ul>
     </div>
 
    
     {% comment %} <h1>化合物详细信息如下：</h1> {% endcomment %}
 
-    <div class='content'>
+    <div class='contentResult'>
         <div id="contentTop">
             <div id="contentheadleft" >
                 <a href="..{{ MEDIA_URL }}{{ Chemicial.entryname }}">
                     <img src="..{{ MEDIA_URL }}{{Chemicial.entryname}}" alt=""/>
                 </a>
             </div>
-            <table>
+            <table id="contentheadright">
                 <tbody>
                     <!-- display number begin -->
                     
-            <tr>
-                <th  scope="row" style="text-align:center;background:#ddd">分子式</th>
-                <td><a href="">{{ Chemicial.molecularformula }}</a></td>
-            </tr>
-            <tr>
-                <th  scope="row">分子量:</th>
-                <td><a href="">{{ Chemicial.molecularweight }}</a></td>
-            </tr>
-            <tr>
-                <th  scope="row">tips:</th>
-                <td><a href="{{ Chemicial.object.get_absolute_url }}"></a>{{ Chemicial.extra_word }}</td>
-            </tr>
+                    <tr >
+                        <th  scope="row" style="text-align:center;background:#ddd;">分子式：</th>
+                        <td><a href="">{{ Chemicial.molecularformula }}</a></td>
+                    </tr>
+                    <tr>
+                        <th  scope="row">分子量:</th>
+                        <td style="background:#ddd;"><a href="" >{{ Chemicial.molecularweight }}</a></td>
+                    </tr>
+                    <tr>
+                        <th  scope="row" style="text-align:center;background:#ddd;">tips:</th>
+                        <td><a href="{{ Chemicial.object.get_absolute_url }}">{{ Chemicial.extra_word }}</a></td>
+                    </tr>
                 </tbody>
-            </table>  
-            
-                
-                <!-- <p>
-                    <span>分子式:</span>
-                    {{ Chemicial.molecularformula}}
-                </p>
-                <p>
-                    <span>分子量:</span>
-                    {{ Chemicial.molecularweight }}
-                </p>
-                <p>
-                    <span>tips:</span>
-                    {{ Chemicial.extra_word }}
-                </p> -->
-              
+            </table>   
         </div>
         <table>
             <tbody>
                 <!-- serial number begin -->
                 
-                
                     <tr>
-                        <th colspan="2" style="text-align:center;background:#ddd">serial number data</th>
+                        <th colspan="2" style="text-align:center;background:#ddd">
+                            <a name="miao" style="color:black;">serial number data
+                            </a>
+                        </th>
                         
                     </tr>
                     <tr>
@@ -107,9 +94,10 @@
                 {% comment %} <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th> {% endcomment %}
                 <!-- <th colspan=2 ><img style='width:300px;height:200px' class="scrollLoading" src="..{{ MEDIA_URL }}{{Chemicial.object.entryname}}"/></th>     -->
             </tr>
-            
-                <tr>
-                    <th colspan="2" style="text-align:center;background:#ddd">Chemical and physical data</th>
+                
+                <tr name="wang">
+                    
+                    <th colspan="2" style="text-align:center;background:#ddd;color:black;"><a name="wang" style="color:black;">Chemical and physical data</a></th>
                     
                 </tr>
                 <tr>
@@ -136,6 +124,6 @@
 
             </tbody>
         </table>
-</div>
+    </div>
 {% endblock %}
 

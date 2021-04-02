@@ -4,9 +4,9 @@
 ******************************************************* */
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 
+    /* font-family: -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif;
+    'Open Sans', 'Helvetica Neue', sans-serif; */
     margin: 0 auto;
     padding:0;
     list-style:none;
@@ -396,9 +396,9 @@ form
     float:left;
 }
 #message {
-    position: absolute;
+    /* position: absolute; */
     left : 25%;
-    top  : 15%;
+    /* top  : 15%; */
     margin-bottom: 1rem;
 }
 #messagTop{
@@ -408,6 +408,12 @@ form
     
 }
   
+.message {
+    /* 如何变成弹性框是个问题 */
+    width: 80%;
+    height:2rem;
+    position: relative;
+}
 form {
     position: relative;
     width  : 70%;
@@ -425,7 +431,7 @@ input[type=search] {
 
 input, textarea, select{
     width : 60%;
-    height:10%;
+    height:3em;
     margin: 0;
   
     -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
@@ -434,7 +440,7 @@ input, textarea, select{
   }
 button{
     width : 10%;
-    height:10%;
+    height:3em;
     margin: 0;
   
     -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
@@ -473,11 +479,13 @@ table td{
 ***** result *******
 *******************/
 
-.content {
+.contentResult {
+    position:relative;
     /* text-align: center; */
-    margin-top: 5%  ;
+    /* margin-top: 5%  ; */
     padding: 0 auto;
     width:auto;
+    top:10em;
     height:auto;
 }
 #items{
@@ -487,6 +495,7 @@ table td{
     /* text-align:center; */
     position:fixed;
     right:10px;
+    top:12em;
     border-top: 1px solid #beb2b2;
 }
 #items >ul >li:first-child{
@@ -512,22 +521,36 @@ table td{
     height:100%; */
 }
 #contentheadleft > a >img{
-    width:300px;
-    height:200px;
+    width:15em;
+    height:15em;
 }
 #contentheadright{
     /* text-align: center; */
-    /* border:1px solid blue; */
+    border:1px solid blue;
     float:right;
     background:#fff;
 }
 
-#contentheadright>table>tbody>tr{
+#contentheadright{
+    margin: 0 auto;
+}
+#contentheadright>tbody>tr>td{
     /* text-align: center; */
     /* border:1px solid blue; */
-    float:right;
+    /* float:right; */
     background:#fff;
-    padding-bottom: 5em;
+    padding: 3em;
+    /* border: 1px solid #333; */
+    /* width: 10px; */
+}
+#contentheadright>tbody>tr{
+    /* text-align: center; */
+    /* border:1px solid blue; */
+    /* float:right; */
+ 
+    /* border: 1px solid #333; */
+    
+    width: 10px;
 }
 
 /******************

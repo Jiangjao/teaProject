@@ -18,3 +18,9 @@
     ```
     主要是把表单的 action 属性改为 {% url 'haystack_search' %}
     https://zhuanlan.zhihu.com/p/106763702
+
+从8000端口到80端口，使用uwsgi和nginx 转发，提高了性能
+#	1. learn how to deploy on web
+
+##	1.1 set permission  of nginx configuration  to root is available
+##	1.2 please read the document of uwsgi and nginx

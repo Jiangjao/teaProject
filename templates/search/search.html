@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <h2 style='text-align:center;'>Search</h2>
+    <p>&nbsp;&raquo;&nbsp;Search&nbsp;</p>
     <div class='message'>
         <form method="get" action="{% url 'haystack_search' %}" id ="message" >
 		
@@ -12,124 +12,124 @@
 		
 	    </form> 
     </div>
-    <form method="get" action=".">
-        <!-- <table>
-            {{ form.as_table }}
-            <tr>
-                <td>&nbsp;</td>
-                <td>
-                    <input type="submit" value="Search">
-                </td>
-            </tr>
-        </table> -->
-
-        {% if query %}
-            <h3>Results</h3>
-            <div class="box-body" >	
-                <div class="butler_list company list">
-                    <div class="layout">
-                        <div class="head">
-                            <ul class="tab_header">
-                                <li class="active"><a href="?ct=&city=">全部</a> </li>
-                                <li class=""><a href="?sort=test1&ct=&item1=">排序字段1 &#8595;</a></li>
-                                <li class=""><a href="?sort=test2&ct=&item2=">排序字段2 &#8595;</a></li>
-                            </ul>
-                        </div>
-                            {% comment %} {% for result in page.object_list %} {% endcomment %}
-                            {% for result in page.object_list %}
-                            <dl class="des difdes">
-                            <dd>
-                                    
-                                        <div class="clearfix">
-                                            <a href="/tables/{{ result.object.cid }}">
-                                                <h1>{{ result.object.entryname }}</h1>
-                                                <div class="pic fl">
-                                                        {% comment %}     
-                                                        <img src="{% static 'image/authentication.png' %}"/>
-    
-                                                        <img src="{% static 'image/wiki.jpeg' %}"/> {% endcomment %}
-    
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="cont">
-                                            <li class="first"><p class="pic9">seek<span>1</span></p><p class="c7">find:<span>1000</span></p></li>
-                                            {% comment %} <li class="c8" style="padding-left:18px;">北京市海淀区中关村北大街</li>
-                                            <li class="pic10" style="padding-left:18px;">经典课程：
-    
-                                                    <a href="/diary/19/">{{ result.id }}</a>
-    
-                                                    <a href="/diary/16/">数据库基础</a>
-    
-                                            </li> {% endcomment %}
-                                        </ul>
-                                    </dd>
-                                <dt>
-                                    <a href="org-detail-homepage.html">
-                                        <img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/>
-                                    </a>
+    <div style="clear:both;">
+        <form method="get" action=".">
+            
+            {% if query %}
+                <h3>Results</h3>
+                <div class="box-body" >	
+                    <div class="butler_list company list">
+                        <div class="layout">
+                            <div class="head">
+                                <ul class="tab_header">
+                                    <li class="active"><a href="?ct=&city=">全部</a> </li>
+                                    <li class=""><a href="?sort=test1&ct=&item1=">排序字段1 &#8595;</a></li>
+                                    <li class=""><a href="?sort=test2&ct=&item2=">排序字段2 &#8595;</a></li>
+                                </ul>
+                            </div>
+                                {% comment %} {% for result in page.object_list %} {% endcomment %}
+                                {% for result in page.object_list %}
+                                <dl class="des difdes">
+                                <dd>
                                         
-                                </dt>
-                                
-                                
-                                <div class="buy start_groupbuy jsShowPerfect2" data-id="22"><br/>详细<br/>信息</div>
-                            </dl>
-                        
-                        {% empty %}
-                            <p>No results found.</p>
-                        {% endfor %}
-                        
-                        {% comment %} {% endfor %} {% endcomment %}
-                        {% comment %} <div id="pagination">
-                            {{ result.render }}
-                        </div> {% endcomment %}
-    
-                        <div class="pageturn">
-                            <ul class="pagelist">
-                                	
-                                {% if result.has_previous %}
-                                    <li class="long"><a href=""?{{ result.previous_page_number.querystring }}"">上一页</a></li>
-                                {% endif %}
-    
-                                {% for page in result.pages %}
-                                    {% if page %}
-                                        {% ifequal page result.number %}
-                                            <li class="active"><a href="?{{ page }}">{{ page }}</a></li>
-                                        {% else %}
-                                            <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li> 
-                                        {% endifequal %}
-                                    {% else %}
-                                        <li class='none'> ... </li> 
+                                            <div class="clearfix">
+                                                <a href="/tables/{{ result.object.cid }}">
+                                                    <h1>{{ result.object.entryname }}</h1>
+                                                    <div class="pic fl">
+                                                            {% comment %}     
+                                                            <img src="{% static 'image/authentication.png' %}"/>
+        
+                                                            <img src="{% static 'image/wiki.jpeg' %}"/> {% endcomment %}
+        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <ul class="cont">
+                                                <li class="first"><p class="pic9">seek<span>1</span></p><p class="c7">find:<span>1000</span></p></li>
+                                                {% comment %} <li class="c8" style="padding-left:18px;">北京市海淀区中关村北大街</li>
+                                                <li class="pic10" style="padding-left:18px;">经典课程：
+        
+                                                        <a href="/diary/19/">{{ result.id }}</a>
+        
+                                                        <a href="/diary/16/">数据库基础</a>
+        
+                                                </li> {% endcomment %}
+                                            </ul>
+                                        </dd>
+                                    <dt>
+                                        <a href="org-detail-homepage.html">
+                                            <img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/>
+                                        </a>
+                                            
+                                    </dt>
+                                    
+                                    
+                                    <div class="buy start_groupbuy jsShowPerfect2" data-id="22"><br/>详细<br/>信息</div>
+                                </dl>
+                            
+                            {% empty %}
+                                <p>No results found.</p>
+                            {% endfor %}
+                            
+                            {% comment %} {% endfor %} {% endcomment %}
+                            {% comment %} <div id="pagination">
+                                {{ result.render }}
+                            </div> {% endcomment %}
+        
+                            {% comment %} <div class="pageturn">
+                                <ul class="pagelist">
+                                        
+                                    {% if result.has_previous %}
+                                        <li class="long"><a href=""?{{ result.previous_page_number.querystring }}"">上一页</a></li>
                                     {% endif %}
-                                {% endfor %}
-                                {% if result.has_next %}
-                                    <li class="long"><a href="?{{ result.next_page_number.querystring }}">下一页</a></li>
-                                {% endif %}		
-                                					
-                                <li><a href="?page=2" class="page">2</a></li>	
-                                <li><a href="?page=3" class="page">3</a></li>
-                                <li class="long"><a href="?page=2">下一页</a></li> 
-                            </ul>
+        
+                                    {% for page in result.pages %}
+                                        {% if page %}
+                                            {% ifequal page result.number %}
+                                                <li class="active"><a href="?{{ page }}">{{ page }}</a></li>
+                                            {% else %}
+                                                <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li> 
+                                            {% endifequal %}
+                                        {% else %}
+                                            <li class='none'> ... </li> 
+                                        {% endif %}
+                                    {% endfor %}
+                                    {% if result.has_next %}
+                                        <li class="long"><a href="?{{ result.next_page_number.querystring }}">下一页</a></li>
+                                    {% endif %}		
+                                                        
+                                    {% comment %} <li><a href="?page=2" class="page">2</a></li>	
+                                    <li><a href="?page=3" class="page">3</a></li>
+                                    <li class="long"><a href="?page=2">下一页</a></li> 
+                                </ul>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
-            </div>
-        
-                   
-        <div class="pagination">
-            <span class="step-links">
-                {% if page.has_previous or page.has_next %}
-                    <div >
-                        {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
-                        |
-                        {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
-                    </div>
-                {% endif %}
-            </span>
-        {% else %}
-                {# Show some example queries to run, maybe query syntax, something else? #}
-        {% endif %}    
-        </div>        
-                
-    </form>
+            <!-- page display-->
+            <div class="pageturn">  
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if page.has_previous or page.has_next %}
+                            <div >
+                                {% if page.has_previous %}
+                                <li class="long">
+                                <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}{% if page.has_previous %}&laquo;Previous</a>{% endif %}</li>
+                                
+                                <span class="current">
+                                    &nbsp;&nbsp;<em style="text-align:center;line-height:29px;">Page{{ page.number }} of {{ page.paginator.num_pages }} </em>
+                                </span>
+                                {% if page.has_next %}
+                                <li class="long">
+                                <a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}{% if page.has_next %}&raquo;Next</a>{% endif %}</li>
+                            </div>
+                        {% endif %}
+                    </span> 
+                {% else %}
+                        {# Show some example queries to run, maybe query syntax, something else? #}
+                {% endif %}    
+                </div>        
+            </div>             
+        </form>
+    </div>
 {% endblock %}

@@ -260,6 +260,8 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+# haystack configuration
 # 自动更新索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
-
+# haystack 默认分页
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 4

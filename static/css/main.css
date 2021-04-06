@@ -390,7 +390,7 @@ form
 ****************/
 
 .message{
-    width:70%;
+    width:200px;
     height:20%;
     margin:0 auto;
     float:left;
@@ -419,6 +419,7 @@ form {
     width  : 70%;
     height : 60%;
     margin : 12% auto;
+    clear:both;
 }
 
 
@@ -480,24 +481,28 @@ table td{
 *******************/
 
 .contentResult {
-    position:relative;
+    /* position:relative; */
     /* text-align: center; */
-    /* margin-top: 5%  ; */
-    padding: 0 auto;
+    /* margin-top: 5% ; */
+    padding: 10px auto;
     width:auto;
-    top:10em;
+    margin:1ch;
+    /* 一句clear:both 改好久... */
+    clear:both;
     height:auto;
 }
 #items{
-    width:10%;
-    height:auto;
-    /* float:right; */
-    /* text-align:center; */
+    width:80;
+    height:100px;
+    float:right;
+    text-align:center;
     position:fixed;
     right:10px;
     top:12em;
     border-top: 1px solid #beb2b2;
+    clear:both;
 }
+
 #items >ul >li:first-child{
     margin-top:0.7em;
 }
@@ -508,11 +513,12 @@ table td{
 }
 
 #contentTop{
-    width:50%;
+    width:70%;
     /* 盒子无法正常显示？？ */
     height:20em;
-    margin:0 auto;
+    margin:10px auto;
     border:1px solid red;
+    /* 定位在哪儿？？ */
     /* background-color: black; */
 }
 #contentheadleft{
@@ -531,15 +537,15 @@ table td{
     background:#fff;
 }
 
-#contentheadright{
+/* #contentheadright{
     margin: 0 auto;
-}
+} */
 #contentheadright>tbody>tr>td{
     /* text-align: center; */
     /* border:1px solid blue; */
     /* float:right; */
     background:#fff;
-    padding: 3em;
+    padding: 2em;
     /* border: 1px solid #333; */
     /* width: 10px; */
 }

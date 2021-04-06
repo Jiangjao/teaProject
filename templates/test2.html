@@ -133,4 +133,22 @@
 
 </body>
 
+    {% if result.has_previous %}
+        <li class="long"><a href=""?{{ result.previous_page_number.querystring }}"">上一页</a></li>
+    {% endif %}
+
+    {% for page in result.pages %}
+    {% if page %}
+        {% ifequal page result.number %}
+            <li class="active"><a href="?{{ page }}">{{ page }}</a></li>
+        {% else %}
+            <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li> 
+        {% endifequal %}
+    {% else %}
+        <li class='none'> ... </li> 
+    {% endif %}
+    {% endfor %}
+    {% if result.has_next %}
+        <li class="long"><a href="?{{ result.next_page_number.querystring }}">下一页</a></li>
+    {% endif %}	
 </html>

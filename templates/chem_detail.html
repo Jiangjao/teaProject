@@ -2,8 +2,9 @@
 {% load static %}
 
 {% block content %}
-
-    <div class='message'>
+    <h4>results</h4>
+    <h4><li>&raquo;Search &nbsp;&raquo;&nbsp;{{ Chemicial.molecularformula }}</li></h4>
+    <!-- <div class='message'>
         <form method="get" action="{% url 'haystack_search' %}" id ="messagTop" >
 		
 		<input type="search" name="q" placeholder="Search" required>
@@ -11,9 +12,9 @@
 		<button type="submit">搜索</button>
 		
 	    </form> 
-    </div>  
+    </div>   -->
     
-    <div id="items">
+    <div id="items" >
         <ul>
 
             <li><a href="#miao">编号系统</a></li>
@@ -21,12 +22,20 @@
             <li><a href="#wang">物性数据</a></li>
             
             <li><a href="#meng">药代动力学数据</a></li>
-
-            <!-- <li><a href="#meng">识别信息</a></li> -->
         
         </ul>
     </div>
+    <!-- <div id="sidebar">
+        <ul>
 
+            <li><a href="#miao">编号系统</a></li>
+            
+            <li><a href="#wang">物性数据</a></li>
+            
+            <li><a href="#meng">药代动力学数据</a></li>
+        
+        </ul>
+    </div> -->
    
     {% comment %} <h1>化合物详细信息如下：</h1> {% endcomment %}
 

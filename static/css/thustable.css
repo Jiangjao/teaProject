@@ -1,0 +1,128 @@
+/**************************************
+TABLES display
+***************************************/
+.item-box{
+    display: flex;
+    border:1px solid  #a1a1a1;
+
+    height:160px;
+}
+
+.item-box:hover{
+    text-shadow:#f4f4f4;
+    box-shadow: 6px 5px 5px  #f4f4f4;
+}
+.items_picture{
+    margin:10px 10px 0 10px;
+}
+#moreInfo{
+    text-align:center;
+    border:1px solid #a1a1a1;
+    background:#fff;
+    width:130px;
+    height:130px;
+    -moz-border-radius:100px;
+    -webkit-border-radius:100px;
+    border-radius:100px;
+    
+    margin:1% 2% 0 30%;
+    border:1px solid #a1a1a1;
+}
+#moreInfo:hover{
+    background:#eaeaea;
+}
+.tab_header {
+    height: 50px;
+    line-height: 50px;
+    text-indent: 0;
+}
+
+.tab_header li {
+    height: 48px;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    text-indent: 0;
+    margin: 0 20px;
+    padding: 0 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tab_header a {
+    color: #333;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    width: auto;
+}
+
+.tab_header .active {
+    border-bottom: 2px solid #717171;
+    color: #717171;
+    font-weight: bold;
+}
+
+.list .layout .head, .personal_des .head {
+    border-bottom: 1px solid #eaeaea;
+    background: #f8f8f8;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    font-size: 14px;
+}
+
+.butler_list.company .layout {
+    border: 0;
+}
+
+/* ****************
+***** sidebar ******
+****************** */
+#items{
+    right:1em;
+    border-top:1px solid #eee;
+    position:fixed;
+    /* top:10px; */
+    max-width: 13%;
+
+}
+#items >ul {
+    right:1em;
+    /* border-top:1px solid #333; */
+    max-width: 100%;
+   
+}
+#items >ul> li {
+    right:1.5em;
+    margin-top: 1em;
+    text-shadow: #eaeaea;
+    text-align: center;
+    /* border-top:1px solid #333; */
+
+
+}
+#sticky-sidebar {
+    position:fixed;
+    max-width: 20%;
+    }
+
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

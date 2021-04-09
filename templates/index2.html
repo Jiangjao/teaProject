@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block header %}    
+<nav>
+    <ul id="com_headtop">
+        <li tabindex="1"><a href="{% url 'index' %}" >Home</a></li><!--
+     --><li tabindex="1"><a href="{% url 'tables' %}"  >About</a></li>
+        <li tabindex="1"><a href="{% url 'index' %}" class="selected" >How to use</a></li>
+        <li tabindex="1"><a href="{% url 'about' %}">Document</a></li>
+        <li tabindex="1"><a href="{% url 'download' %}" >Download</a></li>
+    </ul>
+</nav>
+{% endblock %} 
+
+  
+        
+   
+{%block content%}
+    <div class='message'>
+        <form method="get" action="{% url 'haystack_search' %}" id ="message" >
+		
+		<input type="search" name="q" placeholder="Search" required>
+
+		<button type="submit">搜索</button>
+		
+	    </form> 
+    </div>
+
+    <div id='wrapper'>
+        <section>
+                
+                <!-- 占位符 -->
+            <!--  <p> </p>  %} -->
+        </section>
+    </div>
+{% endblock %}

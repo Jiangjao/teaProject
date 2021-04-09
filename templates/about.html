@@ -6,43 +6,40 @@
 {% endblock %}
 
 {% block header %}    
-<nav>
-    <ul id="com_headtop">
-        <li tabindex="1"><a href="{% url 'index' %}" >Home</a></li><!--
-     --><li tabindex="1"><a href="{% url 'tables' %}" >About</a></li>
-        <li tabindex="1"><a href="{% url 'index' %}" >How to use</a></li>
-        <li tabindex="1"><a href="{% url 'about' %}"class="selected" >Document</a></li>
-        <li tabindex="1"><a href="{% url 'download' %}">Download</a></li>
-    </ul>
-</nav>
+
 
 {% endblock %}    
     
 
 {% block css %}
-<!-- DataTables CSS -->
-	{% comment %} <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"> {% endcomment %}
 
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"> 
 {% endblock %}
-
+{% block navigation%}
+    <li role="presentation" ><a href="{% url 'index' %}">Home</a></li>
+    <!-- <li role="presentation" ><a href="{% url 'tables' %}">Tables</a></li> -->
+    <li role="presentation" class="active"><a href="{% url 'about' %}">About</a></li>	
+{% endblock %}
 {% block content %}
-    <div id='wrapper'>
+    <div id='wrapper' class-"container">
         <section>
-            <img src='image/IMG20160911145839.jpg' alt="" class="profile-photo">
+            
+            <h3>搜索请点击Go</h3>
+            
+            <!-- <p>其他文献</p> -->
+        </section>
+        <section>
+            
             <h3>About</h3>
             <p>专注于茶叶的研究</p>
             <p>茶叶代谢组的和其他组的区别</p>
             <!-- <p>其他文献</p> -->
         </section>
-        <footer>
+        <!-- <footer>
             <a href="https://www.baidu.com" ><img src="image/Block.jpg" alt="test_picture"></a>
             {% comment %} <img src="image/Block.jpg" alt="test_picture" class="social-icon">
             <img src="image/Block.jpg" alt="test_picture" class="social-icon"> {% endcomment %}
             <p>&copy;2021tea</p>
-        </footer>
+        </footer> -->
     </div>
 {% endblock %}
 

@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load highlight %}
 {% block css %}
 <!-- <link rel='stylesheet' type="text/css" href="{% static 'css/thustable.css' %}"> -->
 <!-- <link rel='stylesheet'type="text/css" href="{% static 'css/responsive.css'%}">    -->
@@ -33,9 +34,9 @@
                             </div>
                 
                                 {% for result in page.object_list %}
-                                      <div class="item-box" style="display: flex;border:1px solid red;text-shadow:#f4f4f4;height:160px;" style="box-shadow: 10px 5px #f4f4f4;">
+                                      <div class="item-box" style="display: flex;text-shadow:#f4f4f4;height:160px;" style="box-shadow: 10px 5px #f4f4f4;">
         
-                                        <div class="items " style="">
+                                        <div class="items_picture " >
                                             <!-- 图片居中 -->
                                             <a href="..{{ MEDIA_URL }}{{result.object.entryname}}" target="_blank">
                                                 <img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/>
@@ -44,7 +45,9 @@
                                         </div>
                                         <div class="items_picture" >
                                             <a href="/tables/{{ result.object.cid }}">
-                                                <h3>{{ result.object.entryname }}</h3>
+                                                {% comment %} <h3>{% highlight result.object.entryname with query with query html_tag "div" css_class "highlight_me_please" %} </h3> {% endcomment %}
+                                                <h3>{% highlight result.object.entryname with query   max_length 40 %} </h3>
+                                                
                                             </a>
                                             <ul>
                                                 <p>Compound CID: <em> 9549299 </em></p>
@@ -68,28 +71,36 @@
                  
             <!-- page display-->
             <div class="pageturn">  
-                <div class="pagination">
-                    <span class="step-links">
-                        {% if page.has_previous or page.has_next %}
-                            <div >
-                                {% if page.has_previous %}
-                                <li class="long">
-                                <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}{% if page.has_previous %}&laquo;Previous</a>{% endif %}</li>
-                                
-                                <span class="current">
-                                    &nbsp;&nbsp;<em style="text-align:center;line-height:29px;">Page{{ page.number }} of {{ page.paginator.num_pages }} </em>
-                                </span>
-                                {% if page.has_next %}
-                                <li class="long">
-                                <a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}{% if page.has_next %}&raquo;Next</a>{% endif %}</li>
-                            </div>
-                        {% endif %}
-                    </span> 
-                {% else %}
+                <ul class="nav nav-pills text-center">
+                    <div class="pagination">
+                        {% comment %} <span class="step-links"> {% endcomment %}
+                            {% if page.has_previous or page.has_next %}
+                                    {% if page.has_previous %}
+                                    <li class="long">
+                                    <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}{% if page.has_previous %}&laquo;Previous</a>{% endif %}</li>
+                                    
+                                    {% comment %} <li class="long"> {% endcomment %}
+                                    {% comment %} <span class="current"> {% endcomment %}
+                                        &nbsp;&nbsp;<em style="text-align:center;line-height:29px;">Page{{ page.number }} of {{ page.paginator.num_pages }} </em>
+                                    {% comment %} </span> {% endcomment %}
+                                    </li>
+                                    {% if page.has_next %}
+                                    <li class="long">
+                                    <a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}{% if page.has_next %}&raquo;Next&nbsp;&nbsp;&nbsp;</a>{% endif %}</li>
+                               
+                            {% endif %}
+                        {% comment %} </span>  {% endcomment %}
+                    {% else %}
                         {# Show some example queries to run, maybe query syntax, something else? #}
-                {% endif %}    
-                </div>        
+                    {% endif %}    
+                    </div>
+                </ul>        
             </div>             
         </form>
     </div>
+    <style>
+        span.highlighted {
+            color: red;
+        }
+    </style>
 {% endblock %}

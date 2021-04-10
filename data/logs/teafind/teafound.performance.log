@@ -1892,3 +1892,145 @@
 2021-04-09 19:19:19,221 teafound.performance 19 INFO     0.008998870849609375 /index {}
 2021-04-09 19:19:21,833 teafound.performance 19 INFO     0.06196475028991699 /search/ {'q': 'TMDB-00001'}
 2021-04-09 19:19:25,186 teafound.performance 19 INFO     0.01699233055114746 /tables/2244/ {}
+2021-04-10 18:32:44,377 teafound.performance 19 INFO     0.12392926216125488 / {}
+2021-04-10 18:32:47,302 teafound.performance 19 INFO     0.4047682285308838 /favicon.ico {}
+2021-04-10 18:32:50,993 teafound.performance 19 INFO     0.23086810111999512 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:32:54,953 teafound.performance 19 INFO     0.027983903884887695 /tables/2244/ {}
+2021-04-10 18:36:39,504 teafound.performance 19 INFO     0.08095407485961914 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:39:51,440 teafound.performance 19 INFO     0.06795692443847656 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:41:10,645 teafound.performance 19 INFO     0.06496715545654297 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:41:33,582 teafound.performance 19 INFO     0.04897117614746094 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:42:06,985 teafound.performance 19 INFO     0.05496525764465332 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:43:12,333 teafound.performance 19 INFO     0.05896949768066406 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:43:29,194 teafound.performance 19 INFO     0.02698373794555664 /tables/2244/ {}
+2021-04-10 18:43:35,078 teafound.performance 19 INFO     0.009993314743041992 /about/ {}
+2021-04-10 18:43:36,830 teafound.performance 19 INFO     0.007569551467895508 /index {}
+2021-04-10 18:43:39,872 teafound.performance 19 INFO     0.008991241455078125 /about/ {}
+2021-04-10 18:43:42,600 teafound.performance 19 INFO     0.04997396469116211 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:43:48,157 teafound.performance 19 INFO     0.025984525680541992 /tables/2244/ {}
+2021-04-10 18:43:53,717 teafound.performance 19 INFO     0.011013984680175781 /about/ {}
+2021-04-10 18:43:54,953 teafound.performance 19 INFO     0.009991645812988281 /index {}
+2021-04-10 18:43:56,174 teafound.performance 19 INFO     0.004995584487915039 /about/ {}
+2021-04-10 18:45:08,000 teafound.performance 19 INFO     0.04497218132019043 /about/ {}
+2021-04-10 18:45:11,075 teafound.performance 19 INFO     0.007002830505371094 /about/ {}
+2021-04-10 18:45:19,965 teafound.performance 19 INFO     0.039977312088012695 /index {}
+2021-04-10 18:45:20,030 teafound.performance 19 INFO     0.011992692947387695 /index {}
+2021-04-10 18:45:21,815 teafound.performance 19 INFO     0.009993791580200195 /about/ {}
+2021-04-10 18:45:24,669 teafound.performance 19 INFO     0.0659639835357666 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:45:24,767 teafound.performance 19 INFO     0.07196235656738281 /search/ {'q': 'TMDB-00001'}
+2021-04-10 18:45:26,744 teafound.performance 19 INFO     0.027979612350463867 /tables/2244/ {}
+2021-04-10 18:45:30,078 teafound.performance 19 INFO     0.013005495071411133 /index {}
+2021-04-10 18:45:33,194 teafound.performance 19 INFO     0.011992931365966797 /about/ {}
+2021-04-10 18:45:34,191 teafound.performance 19 INFO     0.008993864059448242 /index {}
+2021-04-10 18:46:42,603 teafound.performance 19 INFO     0.04497551918029785 /index {}
+2021-04-10 18:47:57,890 teafound.performance 19 INFO     0.03597545623779297 /index {}
+2021-04-10 18:48:10,982 teafound.performance 19 INFO     0.036981821060180664 /index {}
+2021-04-10 18:48:12,741 teafound.performance 19 INFO     0.011989116668701172 /about/ {}
+2021-04-10 18:48:14,643 teafound.performance 19 INFO     0.009992361068725586 /index {}
+2021-04-10 18:48:16,217 teafound.performance 19 INFO     0.009996414184570312 /about/ {}
+2021-04-10 18:48:17,304 teafound.performance 19 INFO     0.009991645812988281 /index {}
+2021-04-10 18:48:20,408 teafound.performance 19 INFO     0.009992361068725586 /about/ {}
+2021-04-10 18:48:25,849 teafound.performance 19 INFO     0.047972917556762695 /search/ {'q': 'TMDB-'}
+2021-04-10 18:48:29,075 teafound.performance 19 INFO     0.03998064994812012 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:48:29,147 teafound.performance 19 INFO     0.0029976367950439453 /media/images/TMDB-00005.jpg {}
+2021-04-10 18:48:29,491 teafound.performance 19 INFO     0.003997087478637695 /media/images/TMDB-00006.jpg {}
+2021-04-10 18:48:29,521 teafound.performance 19 INFO     0.0039975643157958984 /media/images/TMDB-00007.jpg {}
+2021-04-10 18:48:29,550 teafound.performance 19 INFO     0.002998828887939453 /media/images/TMDB-00008.jpg {}
+2021-04-10 18:48:34,989 teafound.performance 19 INFO     0.03692269325256348 /search/ {'q': 'TMDB-', 'page': '3'}
+2021-04-10 18:48:35,068 teafound.performance 19 INFO     0.004996061325073242 /media/images/TMDB-00009.jpg {}
+2021-04-10 18:48:35,069 teafound.performance 19 INFO     0.0039975643157958984 /media/images/TMDB-00010.jpg {}
+2021-04-10 18:49:13,974 teafound.performance 19 INFO     0.04497337341308594 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:49:58,954 teafound.performance 19 INFO     0.07795500755310059 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:50:18,365 teafound.performance 19 INFO     0.05296897888183594 /search/ {'q': 'TMDB-', 'page': '3'}
+2021-04-10 18:50:20,914 teafound.performance 19 INFO     0.043851613998413086 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:52:49,321 teafound.performance 19 INFO     0.06196236610412598 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:52:54,411 teafound.performance 19 INFO     0.047974586486816406 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:53:51,347 teafound.performance 19 INFO     0.07295846939086914 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:53:54,134 teafound.performance 19 INFO     0.05596733093261719 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:53:54,197 teafound.performance 19 INFO     0.08594870567321777 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:54:14,312 teafound.performance 19 INFO     0.03298234939575195 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:56:18,130 teafound.performance 19 INFO     0.06995940208435059 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:56:22,118 teafound.performance 19 INFO     0.04697275161743164 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:56:25,342 teafound.performance 19 INFO     0.03797769546508789 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:56:28,191 teafound.performance 19 INFO     0.05296945571899414 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:57:19,526 teafound.performance 19 INFO     0.06995534896850586 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:57:24,113 teafound.performance 19 INFO     0.05396914482116699 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:57:33,515 teafound.performance 19 INFO     0.08395123481750488 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:57:34,315 teafound.performance 19 INFO     0.020987987518310547 /favicon.ico {}
+2021-04-10 18:57:36,206 teafound.performance 19 INFO     0.06096339225769043 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:57:38,600 teafound.performance 19 INFO     0.05297040939331055 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:57:40,717 teafound.performance 19 INFO     0.044970035552978516 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:57:43,512 teafound.performance 19 INFO     0.05896401405334473 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:58:34,393 teafound.performance 19 INFO     0.05696749687194824 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:58:37,596 teafound.performance 19 INFO     0.04597139358520508 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:59:21,400 teafound.performance 19 INFO     0.08295226097106934 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:59:24,650 teafound.performance 19 INFO     0.04197406768798828 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:59:46,841 teafound.performance 19 INFO     0.07495927810668945 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:59:49,485 teafound.performance 19 INFO     0.04297614097595215 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:59:51,528 teafound.performance 19 INFO     0.05196881294250488 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:59:54,413 teafound.performance 19 INFO     0.05496835708618164 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 18:59:56,339 teafound.performance 19 INFO     0.03398394584655762 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 18:59:58,618 teafound.performance 19 INFO     0.048970937728881836 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:00:01,014 teafound.performance 19 INFO     0.039977073669433594 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:00:17,674 teafound.performance 19 INFO     0.07495617866516113 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:00:19,990 teafound.performance 19 INFO     0.03598427772521973 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:00:20,868 teafound.performance 19 INFO     0.04399418830871582 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:00:27,758 teafound.performance 19 INFO     0.05395388603210449 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:03:12,609 teafound.performance 19 INFO     0.08195352554321289 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:03:14,246 teafound.performance 19 INFO     0.03397250175476074 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:03:15,056 teafound.performance 19 INFO     0.039975881576538086 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:03:33,866 teafound.performance 19 INFO     0.05396771430969238 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:03:56,490 teafound.performance 19 INFO     0.07295799255371094 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:04:12,978 teafound.performance 19 INFO     0.05096006393432617 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:04:15,657 teafound.performance 19 INFO     0.054683685302734375 /search/ {'q': 'TMDB-', 'page': '3'}
+2021-04-10 19:04:17,777 teafound.performance 19 INFO     0.03731060028076172 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:04:20,116 teafound.performance 19 INFO     0.04197430610656738 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:04:22,133 teafound.performance 19 INFO     0.04097580909729004 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:05:41,265 teafound.performance 19 INFO     0.06896066665649414 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:06:03,689 teafound.performance 19 INFO     0.046971797943115234 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:06:05,234 teafound.performance 19 INFO     0.03897738456726074 /search/ {'q': 'TMDB-', 'page': '3'}
+2021-04-10 19:06:06,960 teafound.performance 19 INFO     0.04897189140319824 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:06:08,682 teafound.performance 19 INFO     0.05197000503540039 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:06:13,290 teafound.performance 19 INFO     0.012991189956665039 /about/ {}
+2021-04-10 19:06:15,803 teafound.performance 19 INFO     0.007996320724487305 /index {}
+2021-04-10 19:09:15,625 teafound.performance 19 INFO     0.012991189956665039 /about/ {}
+2021-04-10 19:09:17,162 teafound.performance 19 INFO     0.01099538803100586 /index {}
+2021-04-10 19:11:55,422 teafound.performance 19 INFO     0.036963462829589844 /about/ {}
+2021-04-10 19:11:59,015 teafound.performance 19 INFO     0.05095362663269043 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:12:00,167 teafound.performance 19 INFO     0.018988370895385742 /tables/2244/ {}
+2021-04-10 19:16:47,937 teafound.performance 19 INFO     0.030002832412719727 /admin/ {}
+2021-04-10 19:16:48,333 teafound.performance 19 INFO     0.38077664375305176 /admin/login/ {'next': '/admin/'}
+2021-04-10 19:16:51,019 teafound.performance 19 INFO     0.5566811561584473 /admin/login/ {'next': '/admin/'}
+2021-04-10 19:16:55,114 teafound.performance 19 INFO     0.365875244140625 /admin/login/ {'next': '/admin/'}
+2021-04-10 19:17:02,136 teafound.performance 19 INFO     0.4067866802215576 /admin/login/ {'next': '/admin/'}
+2021-04-10 19:17:02,286 teafound.performance 19 INFO     0.1399240493774414 /admin/ {}
+2021-04-10 19:17:05,793 teafound.performance 19 INFO     0.2188701629638672 /admin/teafound/resource/ {}
+2021-04-10 19:17:05,880 teafound.performance 19 INFO     0.03497767448425293 /admin/jsi18n/ {}
+2021-04-10 19:17:08,373 teafound.performance 19 INFO     0.16090869903564453 /admin/teafound/resource/2/change/ {}
+2021-04-10 19:17:08,475 teafound.performance 19 INFO     0.02798628807067871 /admin/jsi18n/ {}
+2021-04-10 19:17:10,093 teafound.performance 19 INFO     0.10294079780578613 /admin/teafound/resource/ {}
+2021-04-10 19:17:11,051 teafound.performance 19 INFO     0.06096315383911133 /admin/ {}
+2021-04-10 19:18:30,247 teafound.performance 19 INFO     0.06396317481994629 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:18:33,188 teafound.performance 19 INFO     0.05596756935119629 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:18:35,967 teafound.performance 19 INFO     0.05197477340698242 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:18:37,989 teafound.performance 19 INFO     0.039975881576538086 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:18:39,994 teafound.performance 19 INFO     0.05796623229980469 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:21:24,492 teafound.performance 19 INFO     0.011993885040283203 / {}
+2021-04-10 19:21:26,370 teafound.performance 19 INFO     0.006999969482421875 /about/ {}
+2021-04-10 19:21:29,278 teafound.performance 19 INFO     0.06296467781066895 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:23:37,492 teafound.performance 19 INFO     0.7995412349700928 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:23:56,210 teafound.performance 19 INFO     0.09123373031616211 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:27:56,051 teafound.performance 19 INFO     0.2638509273529053 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:28:36,182 teafound.performance 19 INFO     0.10694313049316406 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:28:55,714 teafound.performance 19 INFO     0.06995964050292969 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:28:57,018 teafound.performance 19 INFO     0.035981178283691406 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:29:08,187 teafound.performance 19 INFO     0.04397726058959961 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:30:06,950 teafound.performance 19 INFO     0.08494973182678223 /search/ {'q': 'TMDB-', 'page': '2'}
+2021-04-10 19:30:33,339 teafound.performance 19 INFO     0.04497575759887695 /search/ {'q': 'TMDB-', 'page': '1'}
+2021-04-10 19:30:37,328 teafound.performance 19 INFO     0.010991811752319336 /about/ {}
+2021-04-10 19:30:38,910 teafound.performance 19 INFO     0.011994123458862305 /index {}
+2021-04-10 19:30:41,153 teafound.performance 19 INFO     0.05396723747253418 /search/ {'q': 'TMDB-00001'}
+2021-04-10 19:30:43,378 teafound.performance 19 INFO     0.022984743118286133 /tables/2244/ {}
+2021-04-10 19:31:00,563 teafound.performance 19 INFO     0.040764570236206055 /search/ {'q': 'TMDB'}
+2021-04-10 19:31:03,724 teafound.performance 19 INFO     0.05097532272338867 /search/ {'q': 'TMDB', 'page': '2'}
+2021-04-10 19:31:05,270 teafound.performance 19 INFO     0.044974565505981445 /search/ {'q': 'TMDB', 'page': '3'}

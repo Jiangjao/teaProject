@@ -87,7 +87,17 @@ TABLES display
     position:fixed;
     /* top:10px; */
     max-width: 13%;
+    text-align:center;
+}
+#items_picture{
+    min-width: 900px;
+}
+#items_picture>a>img{
 
+    
+    /* top:10px; */
+    max-width: 13%;
+    text-align:center;
 }
 #items >ul {
     right:1em;

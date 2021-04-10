@@ -47,8 +47,8 @@
 	<ul class="nav nav-tabs">
 		{% block navigation%}
 		  <li role="presentation" class="active"><a href="{% url 'index' %}">Home</a></li>
-		  <!-- <li role="presentation" ><a href="{% url 'tables' %}">Tables</a></li> -->
-		  <li role="presentation" ><a href="{% url 'about' %}">About</a></li>	
+		  <li role="presentation" ><a href="{% url 'about' %}">About</a></li>
+		  <!-- <li role="presentation" ><a href="{% url 'tables' %}">search</a></li> -->
 		{% endblock %}
 		<form method="get" action="{% url 'haystack_search' %}" id ="message" >
 			<div class="col-lg-6" style="margin-left:calc(60% - 130px / 2);width:20%;">
@@ -67,11 +67,11 @@
   <!-- container begins -->
 <div class="container" style="margin-top:10px;">
 	{% block content %}
-	<div class="well well-lg">您好，我在大的 Well 中！</div>
-	<div class="well well-sm">您好，我在小的 Well 中！</div>
+	<div class="well well-lg">您好，introduction1</div>
+	<div class="well well-sm">您好，please enter search</div>
 	<div class="jumbotron text-center" style="margin-bottom:0">
-	  <h1>我的第一个 Bootstrap 页面</h1>
-	  <p>重置浏览器窗口大小查看效果！</p> 
+	  <h1>使用操作如下：....</h1>
+	  <p>搜集的资料来源：pubchem && ！</p> 
 	</div> 
 		<!-- <p class=" ">测试footer！</p> 
 	  	<p class=" ">测试footer！</p> 

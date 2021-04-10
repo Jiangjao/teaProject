@@ -17,7 +17,8 @@ class Chemistry(models.Model):
     pubchem = models.CharField(db_column='PubChem', max_length=255, blank=True, null=True)  # Field name made lowercase.
     einecs = models.CharField(db_column='EINECS', max_length=255, blank=True, null=True)  # Field name made lowercase.
     entryname = models.CharField(max_length=255, blank=True, null=True)
-
+    name = models.FileField(upload_to='images/name/cid/',verbose_name="pictureUsedNext", )
+    
     class Meta:
         db_table = 'chemistry'
 

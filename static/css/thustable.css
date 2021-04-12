@@ -13,7 +13,15 @@ TABLES display
     box-shadow: 6px 5px 5px  #f4f4f4;
 }
 .items_picture{
+    /* 居中显示 */
+    display: flex;
     margin:10px 10px 0 10px;
+}
+.items_picture > a > img{
+    /* 居中显示 */
+    justify-content: space-between;
+    align-items:center;
+    /* margin:10px 10px 0 10px; */
 }
 #moreInfo{
     text-align:center;

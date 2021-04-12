@@ -38,21 +38,20 @@
         
                                         <div class="items_picture " >
                                             <!-- 图片居中 -->
-                                            <a href="..{{ MEDIA_URL }}{{result.object.entryname}}" target="_blank">
-                                                <img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}{{result.object.entryname}}"/>
+                                            <a href="..{{ MEDIA_URL }}/images/{{result.object.molecularformula}}.png" target="_blank">
+                                                <img width="200" height="120" class="scrollLoading" src="..{{ MEDIA_URL }}/images/{{result.object.molecularformula}}.png"/>
                                             </a>
-                                            
                                         </div>
                                         <div class="items_picture" >
                                             <a href="/tables/{{ result.object.cid }}">
                                                 {% comment %} <h3>{% highlight result.object.entryname with query with query html_tag "div" css_class "highlight_me_please" %} </h3> {% endcomment %}
-                                                <h3>{% highlight result.object.entryname with query   max_length 40 %} </h3>
+                                                <h3>{% highlight result.object.molecularformula with query   max_length 40 %} </h3>
                                                 
                                             </a>
                                             <ul>
-                                                <p>Compound CID: <em> 9549299 </em></p>
-                                                <p>Compound CID: <em> 9549299 </em></p>
-                                                <p>Compound CID: <em> 9549299 </em></p>  
+                                                <p>Compound mm: <em> {{result.object.molecularformula}} </em></p>
+                                                <p>Compound wh: <em> {{result.object.molecularweight}} </em></p>
+                                                <p>Compound CAS: <em> {{result.object.cas}} </em></p>  
                                             </ul>
                                         </div>  
                                         <div class="text-center" id="moreInfo">                                             

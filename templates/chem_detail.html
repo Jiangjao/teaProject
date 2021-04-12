@@ -2,9 +2,9 @@
 {% load static %}
 
 {% block css %}
-<link rel='stylesheet' type="text/css" href="{% static 'css/thustable.css' %}">
+<link rel='stylesheet' href="{% static 'css/thustable.css' %}">
 <!-- <link rel='stylesheet'type="text/css" href="{% static 'css/responsive.css'%}">    -->
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet"  href="{% static 'css/style.css' %}">
 {% endblock %}
 
 
@@ -30,15 +30,23 @@
             <li><a href="#wang">物性数据</a></li>
             
             <li><a href="#meng">药代动力学数据</a></li>
-        
+            <ul class="downlist">
+                <span>下载</span>
+                {% comment %} {% for resource in response %} {% endcomment %}
+                <li>
+                    <span ><i class="aui-iconfont aui-icon-file"></i>&nbsp;&nbsp;{{ response.molecularformula|slice:":6" }}...</span>
+                    <a href="..{{ MEDIA_URL }}{{ response.entryname }}" class="downcode" target="_blank" download="" data-id="274" title="">下载</a>
+                </li>
+                {% comment %} {% endfor %} {% endcomment %}
+            </ul>
         </ul>
     </div>
     <div class="jumbotron text-center" style="margin-bottom:0;width:80%;">
         <!-- 首要信息展示 -->
         <div style="height:45%;">
             <div class="pull-left" style="width:30%;height:30%">
-                <a href="..{{ MEDIA_URL }}{{ Chemicial.entryname }}">
-                    <img src="..{{ MEDIA_URL }}{{Chemicial.entryname}}" alt="" class="img-thumbnail"/>
+                <a href="..{{ MEDIA_URL }}/images/{{ Chemicial.molecularformula }}.png">
+                    <img src="..{{ MEDIA_URL }}/images/{{Chemicial.molecularformula}}.png" alt="" class="img-thumbnail"/>
                 </a>
 
             </div>
@@ -92,11 +100,11 @@
                         </tr>
                         <tr>
                             <th scope="row" style="padding:0.2em 0; line-height:1.2em;">IUPAC Name</th>
-                            <td><a href="{{ Chemicial.object.get_absolute_url }}">oxidane</a></td>
+                            <td><a href="{{ Chemicial.object.get_absolute_url }}">暂无</a></td>
                         </tr>
                         <tr>
                             <th scope="row" style="padding:0.2em 0; line-height:1.2em;">Create Date:</th>
-                            <td><a href="{{ Chemicial.object.get_absolute_url }}">2010 02 15</a></td>
+                            <td><a href="{{ Chemicial.object.get_absolute_url }}">2021 3 15</a></td>
                         </tr> 
                 <!-- serial number end -->
                 <tr>
@@ -123,14 +131,7 @@
                         <th scope="row" style="padding:0.2em 0; line-height:1.2em;">InChIKey</th>
                         <td><a href="{{ Chemicial.object.get_absolute_url }}">XLYOFNOQVPJJNP-UHFFFAOYSA-N</a></td>
                     </tr>
-                    <tr>
-                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">IUPAC Name</th>
-                        <td><a href="{{ Chemicial.object.get_absolute_url }}">oxidane</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" style="padding:0.2em 0; line-height:1.2em;">Create Date:</th>
-                        <td><a href="{{ Chemicial.object.get_absolute_url }}">2010 02 15</a></td>
-                    </tr> 
+                    
     
                 </tbody>
             </table>

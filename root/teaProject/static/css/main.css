@@ -1,0 +1,564 @@
+@charset "utf-8";
+/******************************************************
+    GENERAL
+******************************************************* */
+
+body{
+    /* font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif; */
+    margin: 0 auto;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+} 
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+/* 设置默认字体 */
+body,button, input, select, textarea {
+    font: 1em/1 -apple-system, BlinkMacSystemFont,Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+h1 { font-size: 1.375em; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.2em; }
+h4, h5, h6 { font-size: 100%; }
+
+a {
+    text-decoration: none;
+}
+
+#wrapper{
+    /* 限制像素宽度 */
+    max-width: 940px;
+    /* 0指的是上下，auto指的是左右 */
+    margin: 0 auto;
+    /* 盒子模型 */
+    padding:0 5%;
+}
+
+img{
+    max-width:100%;
+}
+
+h3{
+    margin:0 0 1em 0;
+}
+/* *************************************
+HEADING
+***************************************** */
+
+.navigation{
+    float:left;
+    /* 清除空白 */
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    width: 100%;
+    /* offset:0; */
+}
+
+/* ************************************
+PAGE VEDIO
+********************************* */
+#gallery{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li{
+    float:left;
+    width:45%;
+    margin:2.5%;
+    background-color: 2.5%;
+    color:#bdc3c7;
+}
+
+/* 处理列表下的p元素 */
+#gallery li a p{
+    margin:0;
+    padding:5%;
+    font-size:0.75em;
+    color:#bdc3c7;
+}
+
+
+#logo{
+    text-align: center;
+    margin:0 ;
+    /* display: block; */
+    /* background-color: aquamarine; */
+}
+h1{
+
+    /* 基本上 1em相当于16px */
+    font-size: 1.75em;
+    font-weight: normal;
+    /* 确定每行文本之间的属性 */
+    line-height: 1.75em;
+}
+
+h2{
+    /* margin: 5px 0 0; */
+    /* 基本上 1em相当于16px */
+    font-size: 1em;
+    font-weight: normal;
+    /* 确定每行文本之间的属性 */
+    line-height: 0.8em;
+}
+h1,h2{
+    /* color:#fff;
+    font-family:'Changa', sans-serif;  */
+}
+
+a{
+    color:#6ab47b
+}
+
+header{
+    background: #6ab48ab0;
+    border-color: #2c4231;
+    height: 10%;
+    
+}
+
+/*********************************
+ NAVIGATION
+ ********************************* */
+nav{
+    text-align: center;
+    padding: 10px 0 ;
+    margin:20px 0 0;
+}
+
+/* 导航背景 */
+nav{
+    background:#92f5c434;
+    /* border-color: #2c4231; */
+}
+
+nav ul{
+    list-style: none;
+    margin:0 10px;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    /* 这里得研究一下 */
+    /* display: inline-block; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center;
+    align-items: center; */
+    padding:0;
+}
+
+nav li a{
+    /* 可以设置成normal or bold */
+    font-weight:bold;
+    padding:15px 1em;
+    
+   
+}
+nav a.selected{
+    color:#226934f5;
+    cursor:pointer;
+}
+
+nav  li >a:focus{
+    background-color: #FF9148;
+    outline-style: none;
+    /* font-weight: bold; */
+} 
+
+/* nav a:hover{
+    color:#39d35f75;
+  
+} */
+/*这里需要更改试试*/
+/* nav  li:focus{
+    background-color: #FF9148;
+    outline-style: none;
+} */
+
+/**************************************
+TABLES display
+***************************************/
+.box-body{
+    text-align: center;
+    margin:0 auto;
+    width:100%;
+    /* height:3820px; */
+}
+
+
+
+/*********************************
+ FOOTER
+ ********************************* */
+
+footer .footer {
+    background: #3a3a3a;
+    height: 300px;
+    padding: 15px;
+    color: #717171;
+}
+
+footer .footer .nav {
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+footer .footer .nav li {
+    float: left;
+    border-right: 1px solid #fff;
+}
+
+footer .footer .nav li:last-child {
+    border: 0;
+}
+
+footer .footer .nav a {
+    color: #fff;
+    padding: 30px;
+}
+
+footer .footer .nav a:hover {
+    text-decoration: underline;
+}
+
+footer .footer .cont {
+    height: 140px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    color: #fff;
+}
+
+footer .footer .cont li {
+    width: 33.3%;
+    float: left;
+}
+
+footer .footer .cont .code {
+    text-align: center;
+}
+
+footer .footer .cont .third {
+    text-align: left;
+    float: right;
+    width: 250px;
+    margin-top: 35px;
+}
+
+footer .footer .cont .third img {
+    margin-right: 10px;
+}
+
+footer .footer .tell {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer .footer .links {
+    height: auto;
+    overflow: hidden;
+}
+
+footer .footer .links span {
+    float: left;
+    font-weight: bold;
+    color: #717171;
+    margin: 5px;
+}
+
+footer .footer .links li {
+    float: left;
+    margin: 5px;
+}
+
+footer .footer .links a {
+    color: #717171;
+}
+
+footer .footer .links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer .line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #343434;
+    clear: both;
+    margin: 20px 0;
+}
+footer{
+    font-size: 1.25em;
+    text-align: center;
+    max-width: 100%;
+    /* padding: 10% 20% 0 20%; */
+    /* padding-top: 50px; */
+    /* 清除float属性 */
+    clear:both;
+    color:#ccc;
+    /* position:fixed 换成absolute可以用嘛？？ */
+    position: absolute;
+    left:50%;
+    bottom:1%;
+    z-index:999;
+}
+footer p{
+    
+    width: 100%;
+ } 
+ .footer .code img{
+	width: 100px;
+	height: 100px;
+}
+.social-icon{
+    /* width:20px; */
+    height:20px;
+    margin:0 5px;
+}
+
+
+body{
+    background-color: #fff;
+    /* body里面设置文本颜色 */
+    /* color:#999 */
+}
+
+/* *****************************************
+    PAGE ABOUT
+******************************************/
+.profile-photo{
+    display:block;
+    max-width:150px;
+    margin:0 auto 30px;
+    border-radius:100%;
+}
+
+.contact-info{
+    list-style: none;
+    padding:0;
+    margin:0;
+    font-size: 0.9em;
+}
+.contact-info a{
+    display: block;
+    min-height: 20px;
+    /* css默认是重复的 */
+    background-repeat: no-repeat;
+    /* 与min-height一致 */
+    background-size: 20px 20px;
+    /* 左侧填充图像 */
+    padding: 0 0 0 30px;
+    margin:0 0 10px;
+}
+
+/* .contact-info li.phone a{
+    background-image:url("../image/icon-phone.svg") ;
+}
+
+.contact-info li.mail a{
+    background-image:url("../image/mail.svg") ;
+}
+
+.contact-info li.address a{
+    background-image:url("../image/companyinfo.svg") ;
+} */
+
+/* *********
+form
+****************
+****************/
+
+.message{
+    width:200px;
+    height:20%;
+    margin:0 auto;
+    float:left;
+}
+#message {
+    /* position: absolute; */
+    left : 25%;
+    /* top  : 15%; */
+    margin-bottom: 1rem;
+}
+#messagTop{
+    position: absolute;
+    left : 25%;
+    top  : -1em;
+    
+}
+  
+.message {
+    /* 如何变成弹性框是个问题 */
+    width: 80%;
+    height:2rem;
+    position: relative;
+}
+form {
+    position: relative;
+    width  : 70%;
+    height : 60%;
+    margin : 12% auto;
+    clear:both;
+}
+
+
+input[type=search] {
+    border: 1px dotted #999;
+    border-radius: 0;
+  
+    -webkit-appearance: none;
+  }
+
+input, textarea, select{
+    width : 60%;
+    height:3em;
+    margin: 0;
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+  }
+button{
+    width : 10%;
+    height:3em;
+    margin: 0;
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+  }
+
+input:focus, textarea:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    outline      : none;
+  }
+
+/******************
+***** table *******
+*******************/
+table{
+    border:1px solid rgb(191, 231, 216);
+    width:60%;
+    /* text-align: center; */
+    margin:0 auto;
+}
+/* table th{
+    border: 1px solid white;
+    padding: 5px;
+    color:rgba(0, 132, 255, 0.288);
+   }
+table td{
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    color: white;
+} */
+
+/******************
+***** result *******
+*******************/
+
+.contentResult {
+    /* position:relative; */
+    /* text-align: center; */
+    /* margin-top: 5% ; */
+    padding: 10px auto;
+    width:auto;
+    margin:1ch;
+    /* 一句clear:both 改好久... */
+    clear:both;
+    height:auto;
+}
+#items{
+    width:80;
+    height:100px;
+    float:right;
+    text-align:center;
+    position:fixed;
+    right:10px;
+    top:12em;
+    border-top: 1px solid #beb2b2;
+    clear:both;
+}
+
+#items >ul >li:first-child{
+    margin-top:0.7em;
+}
+#items >ul >li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom:2em;
+}
+
+#contentTop{
+    width:70%;
+    /* 盒子无法正常显示？？ */
+    height:20em;
+    margin:10px auto;
+    border:1px solid red;
+    /* 定位在哪儿？？ */
+    /* background-color: black; */
+}
+#contentheadleft{
+    float:left;
+    /* width:100%;
+    height:100%; */
+}
+#contentheadleft > a >img{
+    width:15em;
+    height:15em;
+}
+#contentheadright{
+    /* text-align: center; */
+    border:1px solid blue;
+    float:right;
+    background:#fff;
+}
+
+/* #contentheadright{
+    margin: 0 auto;
+} */
+#contentheadright>tbody>tr>td{
+    /* text-align: center; */
+    /* border:1px solid blue; */
+    /* float:right; */
+    background:#fff;
+    padding: 2em;
+    /* border: 1px solid #333; */
+    /* width: 10px; */
+}
+#contentheadright>tbody>tr{
+    /* text-align: center; */
+    /* border:1px solid blue; */
+    /* float:right; */
+ 
+    /* border: 1px solid #333; */
+    
+    width: 10px;
+}
+
+/******************
+***** result end *******
+*******************/

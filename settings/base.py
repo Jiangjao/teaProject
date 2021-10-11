@@ -121,7 +121,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sql_heros_data_master',  # 数据库名，先前创建的
         'USER': 'root',     # 用户名，可以自己创建用户
-        'PASSWORD': 'Dj224768',  # 密码
+        # 注意密码的不同
+        'PASSWORD': 'Dj2247688054',  # 密码
         'HOST': 'localhost',  # mysql服务所在的主机ip
         'PORT': '3306',         # mysql服务端口
         # 'NAME': BASE_DIR / 'db.sqlite3',

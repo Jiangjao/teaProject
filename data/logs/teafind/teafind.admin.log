@@ -1,32 +1,66 @@
-2021-04-11 15:58:33,282 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
-2021-04-11 15:58:39,563 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
-2021-04-11 15:58:39,563 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
-2021-04-11 15:58:46,579 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
-2021-04-11 15:58:46,579 teafound.search_indexes 20 INFO     <class 'teafound.models.CodeImages'> has been searched
-2021-04-11 16:00:20,402 django.utils.autoreload 222 INFO     C:\Users\Cherry\Desktop\teaProject\teafound\search_indexes.py changed, reloading.
-2021-04-11 16:00:26,039 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
-2021-04-11 16:02:41,688 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:02:41,688 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:03:04,826 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:03:04,826 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:03:18,130 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
-2021-04-11 16:03:35,278 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:03:35,278 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:04:56,026 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:04:56,026 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:05:17,483 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:05:17,483 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:05:52,798 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:05:52,798 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:06:49,993 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:06:49,993 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:07:35,576 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:07:35,576 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:07:52,099 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:07:52,099 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:08:27,210 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:08:27,210 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:13:20,570 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:13:20,570 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:16:07,594 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
-2021-04-11 16:16:07,594 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 08:47:33,658 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 08:47:33,658 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:25:44,423 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:25:44,423 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:29:30,515 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:29:30,515 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:31:01,851 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:31:01,851 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:34:26,260 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:34:26,260 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:36:41,725 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:36:41,725 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:38:18,321 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:38:18,321 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:38:26,946 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:38:26,946 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 09:38:40,217 django.utils.autoreload 578 INFO     Watching for file changes with StatReloader
+2021-04-11 09:38:59,195 django.utils.autoreload 578 INFO     Watching for file changes with StatReloader
+2021-04-11 09:41:58,071 django.utils.autoreload 578 INFO     Watching for file changes with StatReloader
+2021-04-11 11:32:37,213 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:32:37,213 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:33:25,498 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:33:25,498 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:43:14,031 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:43:14,031 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:44:24,954 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:44:24,954 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:55:12,259 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:55:12,259 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:55:58,340 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 11:55:58,340 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 12:01:47,270 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-11 12:01:47,270 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 03:09:54,728 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 03:09:54,728 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 03:10:11,904 django.security.csrf 228 WARNING  Forbidden (CSRF cookie not set.): /
+2021-04-12 03:14:44,533 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 03:14:44,533 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 03:37:47,943 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 03:37:47,943 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 04:10:13,456 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 04:10:13,456 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 04:11:32,904 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 04:11:32,904 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 04:13:48,813 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 04:13:48,813 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 05:56:29,438 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 05:56:29,438 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-04-12 10:40:31,341 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add 'clientapi.ipip.net' to ALLOWED_HOSTS.
+2021-04-12 14:59:51,078 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: 'www.soso.com'. You may need to add 'www.soso.com' to ALLOWED_HOSTS.
+2021-04-12 14:59:53,609 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: 'www.wujieliulan.com'. You may need to add 'www.wujieliulan.com' to ALLOWED_HOSTS.
+2021-04-13 04:11:21,092 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: 'passport.baidu.com:80'. You may need to add 'passport.baidu.com' to ALLOWED_HOSTS.
+2021-04-13 09:32:49,467 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add 'clientapi.ipip.net' to ALLOWED_HOSTS.
+2021-04-13 13:59:32,119 django.security.csrf 228 WARNING  Forbidden (CSRF cookie not set.): /
+2021-04-13 18:20:07,795 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: '106.52.197.39:680'. You may need to add '106.52.197.39' to ALLOWED_HOSTS.
+2021-04-13 22:27:12,055 django.security.csrf 228 WARNING  Forbidden (CSRF cookie not set.): /
+2021-04-14 03:40:38,735 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: '106.52.197.39:1680'. You may need to add '106.52.197.39' to ALLOWED_HOSTS.
+2021-04-14 06:47:04,532 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: '106.52.197.39:25080'. You may need to add '106.52.197.39' to ALLOWED_HOSTS.
+2021-04-14 09:54:15,036 django.security.DisallowedHost 77 ERROR    Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add 'clientapi.ipip.net' to ALLOWED_HOSTS.
+2021-10-11 14:08:04,993 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2021-10-11 14:08:46,146 django.utils.autoreload 251 INFO     C:\Users\Cherry\Desktop\teaProject\settings\base.py changed, reloading.
+2021-10-11 14:08:49,482 django.utils.autoreload 637 INFO     Watching for file changes with StatReloader
+2021-10-11 14:09:16,165 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-10-11 14:09:16,165 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-10-11 14:09:45,019 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
+2021-10-11 14:09:45,019 teafound.search_indexes 20 INFO     <class 'teafound.models.Chemistry'> has been searched
